@@ -22,7 +22,7 @@ body {
     background-color: black;
     height: 100vh;
     display: grid;
-    grid-template-rows: 0.5fr repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "header header"
@@ -30,9 +30,15 @@ body {
         "footer footer";
 }
 
+.title-container {
+    text-align: center;
+}
+
 .title {
     background-image: url("../assets/imagenes/fondoheader1.jpg");
     text-indent: -9999px;
+    background-size: cover;
+    background-position: center;
     margin: 0;
 }
 
@@ -44,30 +50,39 @@ nav {
     background-color: #ECC704;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-wrap: nowrap;
 }
 
-.botonera li {
-    margin: 40px;
+.botonera ul li {
+    margin-right: 80px;
     border-bottom: 2px solid black;
 }
 
 #menu_items {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu_items2 {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo-item img {
-    margin-top: 3px;
-    height: 100px;
-    width: 100px;
+#logo-item {      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
+#logo-item img {    
+    max-height: 100px;
 }
 
 main {
@@ -412,9 +427,11 @@ h2 {
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 1024) {
+
+
+@media screen and (max-width: 1024px) {
     body {
-        grid-template-rows: 0.2fr repeat(3, 1fr);
+        grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -422,58 +439,21 @@ h2 {
             "footer";
     }
 
-    .botonera li {
-        margin: 20px;
+    .botonera ul li {
+        margin-right: 40px;
+    }
+
+    .logo {
+        margin-right: 40px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .botonera li {
-        margin: 10px;
+@media screen and (max-width: 480) {
+    .botonera ul li {
+        margin-right: 20px;
     }
 
-    #logo-item img {
-        height: 80px;
-        width: 80px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .img_ppal img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    article {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 80%;
-        margin: 20px auto;
-    }
-
-    .text-container1,
-    .text-container2 {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 80%;
-        margin: 20px auto;
-    }
-
-    .imagen-catering {
-        max-width: 100%;
-        height: auto;
+    .logo {
+        margin-right: 20px;
     }
 }
-
