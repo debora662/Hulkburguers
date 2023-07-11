@@ -179,94 +179,83 @@ main {
     border-radius: 30px;
 }
 
-
-footer {    
-    grid-area: footer;
+footer {
     background-color: #ECC704;
-    margin-bottom: 0px;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;   
+   /*  padding: 10px; */    
 }
 
-#items_wrapper {
+.botonera-footer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.botonera-footer li {
+    margin: 0 20px;
+}
+
+#navegacion {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    margin-top: 10px;
-    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;       
 }
 
-.footer_container1 {
+.follow {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#items1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-}
-
-#items1 li {
-    margin-right: 40px;
-}
-
-#follow {    
-    font-family: Breeze;
-    font-weight: 550;
-    font-size: 17px;
+    align-items: center;
+    font-family: "Breeze";
+    text-decoration: none;
     color: black;
-    margin-top: 3px;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-.footer_container2 {
+ .social-icons {
     display: flex;
-    flex-direction: row;   
-    flex-wrap: nowrap;
+    justify-content:left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
-#items2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;    
-}
-
-#items2 li {
-    margin-right: 20px;
-}
-
-#logo_footer {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -70px;
-}
-
-#logo_footer img {
-    width: 140px;
-    height: 140px;
-}
-
-.logo_redes {
+.social-icons img {
+    margin: 0 20px;    
     height: 35px;
     width: 35px;
 }
 
-.info {
+.logo_footer {    
     display: flex;
-    flex-direction: row;
+    justify-content:left;
+    margin-left: auto;
+    margin-top: 0;
 }
 
-#items3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.logo_footer img {
+    width: 120px;
+    height: 120px;
 }
 
-#items3 li {    
-    font-family: Breeze;
-    font-weight: 500;
-    margin-right: 30px;
+.info {  
+    display: flex;
+    flex-basis: 50%;
+    text-align: left;
+    margin-top: -40px;
 }
+
+.info p {    
+    margin-left: 20px;
+    margin-top: 8px;
+    font-weight:500;
+
+} 
 
 
 
