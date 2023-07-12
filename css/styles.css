@@ -92,9 +92,10 @@ main {
 
 .article-container {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-bottom: 40px;
+    margin-top: 30px
 }
 
 .item1 {
@@ -127,10 +128,9 @@ main {
 }
 
 .item2 h2 {
-    font-family: "Breeze";
-    text-decoration: none;
+    font-family: saty;    
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.3rem;
 }
 
@@ -153,10 +153,9 @@ main {
 
 .item3 h2 {
     margin-bottom: -50px;
-    font-family: "Breeze";
-    text-decoration: none;
+    font-family: saty;    
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.3rem;
 }
 
@@ -269,42 +268,78 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* NOSOTROS */
+.container-article2 {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto;
+    margin-bottom: 40px;
+}
 
+.art1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
 
+.art1 p {    
+    font-family: lato;
+    color: white;
+    font-weight: 800;
+    width: 85%;
+}
 
-
-
-/* PAGE NOSOTROS */
-.titulo h2 {
-    display: block;
+.art1 h2 {
     color: white;
     font-family: saty;
-    font-size: 40px;
-    margin-left: 130px;
-    margin-top: 70px;
+    font-size: 3rem;        
+    font-weight: 500;
 }
 
-.texto p {
-    display: block;
-    color: white;
-    margin-left: 130px;
-    text-align: left;
-    width: 500px;
+.art2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.art2 p {
     font-family: lato;
+    color: white;
     font-weight: 800;
-
+    width: 85%;
 }
 
-#img-nosotros img {
-    display: block;
+.art2 h2 {
+    color: white;
+    font-family: saty;
+    font-size: 3rem;        
+    font-weight: 500;
+}
+
+.art3 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art3 img {
+    border-radius: 30px;
     width: 600px;
     height: 400px;
-    margin-left: 700px;
-    margin-top: -580px;
-    margin-bottom: 230px;
-
 }
 
+/* MENU */
 .titulo2 h2 {
     display: block;
     color: white;
