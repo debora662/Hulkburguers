@@ -46,45 +46,6 @@ header {
     grid-area: header;
 }
 
-nav {
-    background-color: #ECC704;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-.botonera ul li {
-    margin-right: 80px;
-    border-bottom: 2px solid black;
-}
-
-#menu_items {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu_items2 {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#logo-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 80px;
-}
-
-#logo-item img {
-    max-height: 100px;
-}
-
 main {
     background-color: black;
     grid-area: main;
@@ -95,7 +56,8 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 40px;
-    margin-top: 30px
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
 .item1 {
@@ -128,10 +90,10 @@ main {
 }
 
 .item2 h2 {
-    font-family: saty;    
+    font-family: saty;
     color: white;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .item3 {
@@ -153,10 +115,10 @@ main {
 
 .item3 h2 {
     margin-bottom: -50px;
-    font-family: saty;    
+    font-family: saty;
     color: white;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .item4 {
@@ -178,6 +140,9 @@ footer {
     grid-area: footer;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .botonera-footer {
@@ -185,7 +150,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     height: 50%;
-    margin-left: -30px;
 }
 
 .botonera-footer li {
@@ -193,12 +157,12 @@ footer {
 }
 
 #navegacion {
-    list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: -40px;
+    margin-left: -30px;
     border-bottom: 2px solid rgb(7, 7, 7);
 }
 
@@ -216,7 +180,7 @@ footer {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -60px;
     margin-left: -10px;
     height: fit-content;
 }
@@ -247,7 +211,6 @@ footer {
 .info {
     display: flex;
     flex-basis: 50%;
-    text-align: left;
     margin-top: -70px;
 }
 
@@ -286,7 +249,7 @@ footer {
     margin-top: 40px;
 }
 
-.art1 p {    
+.art1 p {
     font-family: lato;
     color: white;
     font-weight: 800;
@@ -296,7 +259,7 @@ footer {
 .art1 h2 {
     color: white;
     font-family: saty;
-    font-size: 3rem;        
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -320,7 +283,7 @@ footer {
 .art2 h2 {
     color: white;
     font-family: saty;
-    font-size: 3rem;        
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -481,4 +444,26 @@ a {
     color: black;
     font-weight: 500;
     font-size: 1.3rem;
+}
+
+
+/* BOOTSTRAP */
+#bg_color {
+    background-color: #ECC704;
+}
+
+.navbar-nav .nav-items {
+    margin-right: 30px;     
+  }
+
+.navbar-nav .links {
+    font-family: "breeze";
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.navbar-nav .nav-items .links:hover {
+  text-decoration: underline;  
 }
