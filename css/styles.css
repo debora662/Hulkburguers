@@ -20,7 +20,7 @@
 
 body {
     background-color: black;
-    height: 100vh;    
+    height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -78,7 +78,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 80px;    
+    margin-right: 80px;
 }
 
 #logo-item img {
@@ -109,7 +109,7 @@ main {
     border-radius: 30px;
 }
 
-.item2 {    
+.item2 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     display: flex;
@@ -134,7 +134,7 @@ main {
     font-size: 1.3rem;
 }
 
-.item3 {    
+.item3 {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     display: flex;
@@ -178,10 +178,10 @@ footer {
     background-color: #ECC704;
     grid-area: footer;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
-.botonera-footer {      
+.botonera-footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -193,17 +193,17 @@ footer {
     margin: 0 20px;
 }
 
-#navegacion {    
+#navegacion {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
     margin-top: 10px;
     border-bottom: 2px solid rgb(7, 7, 7);
 }
 
-.follow {    
+.follow {
     display: flex;
     align-items: center;
     font-family: "Breeze";
@@ -213,7 +213,7 @@ footer {
     font-size: 1rem;
 }
 
-.social-icons {       
+.social-icons {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -222,15 +222,15 @@ footer {
     height: fit-content;
 }
 
-.social-icons img {   
+.social-icons img {
     margin: 0 20px;
     height: 35px;
     width: 35px;
 }
 
-.logo_footer {   
+.logo_footer {
     display: flex;
-    justify-content: left;    
+    justify-content: left;
     margin-left: auto;
     margin-top: 10px;
 }
@@ -240,7 +240,7 @@ footer {
     height: 130px;
 }
 
-.info_container {           
+.info_container {
     display: flex;
     flex-direction: column;
 }
@@ -254,11 +254,11 @@ footer {
 
 .info p {
     margin-left: 20px;
-    margin-top: 8px;   
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    margin-top: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.legal_footer {    
+.legal_footer {
     display: flex;
     flex-direction: column;
     margin-top: -13px;
@@ -266,8 +266,12 @@ footer {
 }
 
 .legal_footer p {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
+
 
 
 /* PAGE NOSOTROS */
@@ -443,9 +447,3 @@ a {
     font-weight: 500;
     font-size: 1.3rem;
 }
-
-
-
-
-
-
