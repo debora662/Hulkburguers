@@ -20,7 +20,7 @@
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 100vh;    
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -89,11 +89,6 @@ nav {
 main {
     background-color: black;
     grid-area: main;
-}
-
-.img_ppal img {
-    width: 100%;
-    height: auto;
 }
 
 .article-container {

@@ -11,25 +11,29 @@
 
 <body>
     <header>
-        <div id="img_header">
+        <div class="title-container">
             <h1 class="title">HulkBurguers</h1>
         </div>
-        <div id="navbar">
-            <nav>
-                <div id="menu_items">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="../index.html">
-                                <img id="logo-item" src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
-                            </a></li>
-                        <li><a href="./locales.html">Locales</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="botonera">
+                <ul id="menu_items">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                </ul>
+            </div>
+
+            <div id="logo-item">
+                <img src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
+            </div>
+
+            <div class="botonera">
+                <ul id="menu_items2">
+                    <li><a href="./locales.html">Locales</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -77,32 +81,39 @@
     </main>
 
     <footer>
-        <div id="logo_footer">
-            <img src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
-        </div>
-        <div id="footer_items">
-            <ul>
+        <div class="botonera-footer">
+            <ul id="navegacion">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./locales.html">Locales</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                <li>Seguinos:
-                    <a href="https://www.facebook.com" target="_blank"><img class="logo_redes"
-                            src="../assets/imagenes/Facebook2.png" alt="logo_facebook"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img class="logo_redes"
-                            src="../assets/imagenes/instagram2.png" alt="logo_ig"></a>
-                    <a href="https://www.twitter.com" target="_blank"><img class="logo_redes"
-                            src="../assets/imagenes/twitter2.png" alt="logo_twitter"></a>
-                </li>
+                <li class="follow">Seguinos:</li>
             </ul>
         </div>
-        <div class="info">
-            <ul>
-                <li>Av. Córdoba 3033</li>
-                <li>Tel: 4904-5512</li>
-                <li>hulkburguers@gmail.com</li>
-            </ul>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="../assets/imagenes/Facebook2.png"
+                    alt="logo_facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../assets/imagenes/instagram2.png"
+                    alt="logo_ig"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../assets/imagenes/twitter2.png"
+                    alt="logo_twitter"></a>
+        </div>
+
+        <div class="logo_footer">
+            <img src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
+        </div>
+        <div class="info_container">
+            <div class="info">
+                <p>Av. Córdoba 3033</p>
+                <p>Tel: 4904-5512</p>
+                <p>hulkburguers@gmail.com</p><br>
+            </div>
+            <div class="legal_footer">
+                <p>HULKBURGUERS. TODOS LOS DERECHOS RESERVADOS. 2017 - 2021.
+                    POLÍTICAS DE PRIVACIDAD.</p>
+            </div>
         </div>
     </footer>
 </body>
