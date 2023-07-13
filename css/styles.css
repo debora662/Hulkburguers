@@ -570,8 +570,7 @@ a {
     .navbar-nav {
         display: flex;
         flex-wrap: nowrap;
-        flex-direction: column;
-        max-width: 576px;
+        flex-direction: column;        
     }
 
     .container-article2 {
