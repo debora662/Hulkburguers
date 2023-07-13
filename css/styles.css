@@ -46,6 +46,7 @@ header {
     grid-area: header;
 }
 
+/* MAIN */
 main {
     background-color: black;
     grid-area: main;
@@ -114,7 +115,7 @@ main {
 }
 
 .item3 h2 {
-    margin-bottom: -50px;
+    margin-bottom: 0px;
     font-family: saty;
     color: white;
     font-weight: 600;
@@ -135,13 +136,13 @@ main {
     border-radius: 30px;
 }
 
+
+/* FOOTER */
 footer {
     background-color: #ECC704;
     grid-area: footer;
     display: flex;
     flex-wrap: nowrap;
-    /* justify-content: flex-start;
-    align-items: center; */
 }
 
 .container_footer {
@@ -162,7 +163,7 @@ footer {
     margin: 0 20px;
 }
 
-#navegacion {    
+#navegacion {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -180,7 +181,7 @@ footer {
     font-size: 1rem;
 }
 
-.social-icons {    
+.social-icons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -193,9 +194,9 @@ footer {
     width: 35px;
 }
 
-.logo_footer {    
-    display: flex;     
-    align-items: center;  
+.logo_footer {
+    display: flex;
+    align-items: center;
     grid-column-start: 2;
     margin-left: auto;
     margin-top: -65px;
@@ -215,7 +216,7 @@ footer {
     margin-top: -20px;
 }
 
-.info {   
+.info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -487,4 +488,62 @@ a {
     margin-left: -40px;
     width: 100px;
     height: 100px;
+}
+
+/*ESCRITORIO */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .article-container {
+        margin-bottom: 60px;
+    }
+
+    .item2 h2,
+    .item3 h2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .article-container {
+        margin-bottom: 40px;
+    }
+
+    .item2 h2,
+    .item3 h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* MOBILE*/
+@media (max-width: 576px) {    
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item1,
+    .item2,
+    .item4 {
+        width: 100%;
+    }
+
+    .item2,
+    .item4 {
+        margin-top: 20px;
+    }
+
+    .item3 {
+        order: 1;
+        margin-top: 30px;
+    }
 }
