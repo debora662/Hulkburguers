@@ -20,7 +20,7 @@
 
 body {
     background-color: black;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -466,11 +466,11 @@ a {
     background-color: #ECC704;
 }
 
-.navbar-nav .nav-items {
+.nav-items {
     margin-right: 50px;
 }
 
-.navbar-nav .links {
+.links {
     font-family: "breeze";
     text-decoration: none;
     color: black;
@@ -478,7 +478,7 @@ a {
     font-size: 1.3rem;
 }
 
-.navbar-nav .nav-items .links:hover {
+.links:hover {
     text-decoration: underline;
 }
 
