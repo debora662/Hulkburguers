@@ -546,4 +546,24 @@ a {
         order: 1;
         margin-top: 30px;
     }
+    .container_footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+      }
+    
+      .botonera-footer {
+        margin-left: 0;
+      }
+    
+      .logo_footer {
+        display: none;
+      }
+    
+      .info_container {
+        margin-top: 0;
+      }
+
+      .social-icons {       
+        justify-content: center;
+      }
 }
