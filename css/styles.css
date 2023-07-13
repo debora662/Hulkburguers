@@ -563,6 +563,10 @@ a {
 
 /* MOBILE*/
 @media (max-width: 576px){
+    body {
+        height: 100%;        
+      }
+
     .navbar-nav {
         display: flex;
         flex-wrap: nowrap;
