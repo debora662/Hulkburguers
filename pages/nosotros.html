@@ -17,29 +17,35 @@
         <div class="title-container">
             <h1 class="title">HulkBurguers</h1>
         </div>
-        <nav class="navbar navbar-expand" id="bg_color">
-            <div class="container-fluid d-flex justify-content-center ">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-items">
-                        <a class="links" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./menu.html">Menu</a>
-                    </li>
-                    <li class="container">
-                        <img id="margin_left" src="../assets/imagenes/LogoBurguer.png" alt="logo_hulkburguers">                        
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./locales.html">Locales</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- navbar bootstrap -->
+        <nav class="navbar navbar-expand-sm" id="bg_color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#options"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="options">
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center" id="list-ul">
+                        <li class="nav-items">
+                            <a class="links" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-items logo-mobile-hide">
+                            <img id="logo_nav" src="../assets/imagenes/LogoBurguer.png" alt="logo de hulkburguers">
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./locales.html">Locales</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>                    
+                </div>
             </div>
         </nav>
     </header>
