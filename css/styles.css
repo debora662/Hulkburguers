@@ -322,46 +322,51 @@ footer {
 }
 
 /* MENU */
-.titulo2 h2 {
-    display: block;
-    color: white;
-    font-family: saty;
-    font-size: 40px;
-    margin-left: 0px;
-    margin-top: 70px;
-    text-align: center;
+.container-article3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.texto2 p {
-    display: block;
+.container-article3 h2 {
+    margin-top: 30px;
+    font-family: saty;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.container-article3 p {
     color: white;
     font-family: lato;
     font-weight: 800;
-    margin-left: 470px;
-    margin-top: 5px;
     text-align: center;
-    width: 400px;
+    width: 40%;
 }
 
-.img-hamburguesas img {
+.container-images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.hamburguesa_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburguesa_style img {
     width: 320px;
     height: 280px;
     border-radius: 20px;
-    margin-left: 85px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.text-hamburguesas p {
+.hamburguesa_style p {
     color: white;
     width: 300px;
     text-align: center;
-    margin-left: 100px;
-    display: inline-block;
-}
-
-.img-sector img {
-    height: 200px;
-    width: 100%;
 }
 
 /* LOCALES */
@@ -495,6 +500,7 @@ a {
 
 /*DESKTOP */
 @media screen and (max-width: 1024px) {
+
     /*Home main */
     .item1 iframe {
         width: 470px;
@@ -523,11 +529,21 @@ a {
         font-size: 3rem;
     }
 
+    /*Menu Main */
+    .hamburguesa_style img {
+        width: 80%;
+        height: auto;
+    }
 
+    .hamburguesa_style p {
+        width: 80%;
+        height: auto;
+    }
 
 }
 
 @media screen and (max-width: 992px) {
+
     /*Nosotros main*/
     .container-article2 {
         display: flex;
@@ -621,7 +637,7 @@ a {
     .item2 h2,
     .item3 h2 {
         font-size: 2.5rem;
-    }    
+    }
 }
 
 /* MOBILE*/
@@ -692,5 +708,40 @@ a {
         order: 2;
         margin-top: 40px;
         max-width: 85%;
+    }
+
+    /* Menu titulo */
+
+    .container-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;        
+    }
+
+    .hamburguesa_style img {
+        max-width: 55%;
+    }
+
+    .hamburguesa_style p {
+        max-width: 50%;
+    }
+    
+
+    .container-article3 p {
+        color: white;
+        font-family: lato;
+        font-weight: 800;
+        font-size: 0.8rem;
+        text-align: center;
+        width: 70%;
+    }
+
+    .container-article3 h2 {
+        margin-top: 30px;
+        font-family: saty;
+        color: white;
+        font-weight: 600;
+        font-size: 2rem;
     }
 }

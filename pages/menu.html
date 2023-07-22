@@ -17,87 +17,108 @@
         <div class="title-container">
             <h1 class="title">HulkBurguers</h1>
         </div>
-        <nav class="navbar navbar-expand" id="bg_color">
-            <div class="container-fluid d-flex justify-content-center ">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-items">
-                        <a class="links" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./menu.html">Menu</a>
-                    </li>
-                    <div class="container">
-                        <img id="margin_left" src="../assets/imagenes/LogoBurguer.png" alt="logo_hulkburguers"
-                            width="100" height="100">
-                        </a>
-                    </div>
-                    <li class="nav-items">
-                        <a class="links" href="./locales.html">Locales</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- navbar bootstrap -->
+        <nav class="navbar navbar-expand-sm" id="bg_color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#options"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="options">
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center" id="list-ul">
+                        <li class="nav-items">
+                            <a class="links" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-items logo-mobile-hide">
+                            <img id="logo_nav" src="../assets/imagenes/LogoBurguer.png" alt="logo de hulkburguers">
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./locales.html">Locales</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <article>
-            <div class="titulo2">
+            <div class="container-article3">
                 <h2>Hamburguesas</h2>
-            </div>
-            <div class="texto2">
                 <p>Contamos con dos Líneas de Hamburguesas: La línea classic con un medallón de 80gr., más económica
                     pero con la misma calidad de siempre. Y nuestra linea deluxe con una hamburguesa de 120gr. Todas
-                    nuestras hamburguesas están hechas con carne premium de novillo, sin aditivos ni conservantes y en
+                    nuestras hamburguesas están hechas con carne premium de novillo, sin aditivos ni conservantes y
+                    en
                     pan
                     artesanal.</p>
             </div>
         </article>
-        <div class="img-hamburguesas">
-            <img src="../assets/imagenes/hamb1.jpg" alt="hmb-1">
-            <img src="../assets/imagenes/hamb2.jpg" alt="hmb-2">
-            <img src="../assets/imagenes/hamb3.jpg" alt="hmb-3">
-        </div>
-        <div class="text-hamburguesas">
-            <p>Super Bacon: Hamburguesa de carne 120g, lechuga, tomate, cheddar, panceta y barbacoa.
-            </p>
-            <p>Hulk Burguer: Hamburguesa de carne 120g, lechuga, tomate, cheddar, y salsa Hulk.
-            </p>
-            <p>Cheese Burguer: Hamburguesa de carne 120g, cheddar, y salsa Hulk.
-            </p>
-        </div>
-        <div class="img-hamburguesas">
-            <img src="../assets/imagenes/hamb4.jpg" alt="hmb-4">
-            <img src="../assets/imagenes/hamb5.jpg" alt="hmb-5">
-            <img src="../assets/imagenes/hamb6.jpg" alt="hmb-6">
-        </div>
-        <div class="text-hamburguesas">
-            <p> Bacon Chesse Burguer: Hamburguesa de carne 80g, cheddar, panceta y salsa Hulk.
-            </p>
-            <p> Bacon Chesse Burguer: Hamburguesa de carne 80g, cheddar, panceta y salsa Hulk.
-            </p>
-            <p> Bacon Burguer: Hamburguesa de carne 120g, cheddar, panceta, barbacoa, cebolla morada y salsa Hulk.
-            </p>
-        </div>
-        <div class="img-hamburguesas">
-            <img src="../assets/imagenes/hamb7.jpg" alt="hmb-7">
-            <img src="../assets/imagenes/hamb8.jpg" alt="hmb-8">
-            <img src="../assets/imagenes/hamb9.jpg" alt="hmb-9">
-        </div>
-        <div class="text-hamburguesas">
-            <p> Chicken Burguer: Hamburguesa de pollo, cheddar, lechuga, tomate y salsa Hulk.
-            </p>
-            <p> Super Hulk: Hamburguesa de carne 120gr, cheddar, lechuga, pepinillos, cebolla y salsa Hulk.
-            </p>
-            <p> Cheese Burguer: Hamburguesa de carne 80gr, cheddar, y salsa Hulk.
-            </p>
-        </div>
+
+        <div class="container-images">
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb1.jpg"
+                    alt="Super Bacon Hamburguesa de carne 120g con lechuga tomate cheddar panceta y barbacoa">
+                <p>Super Bacon: Hamburguesa de carne 120g, lechuga, tomate, cheddar, panceta y barbacoa.</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb2.jpg"
+                    alt="Hulk Burguer Hamburguesa de carne 120g con lechuga tomate cheddar y salsa Hulk">
+                <p>Hulk Burguer: Hamburguesa de carne 120g, lechuga, tomate, cheddar, y salsa Hulk.</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb3.jpg"
+                    alt="Cheese Burguer Hamburguesa de carne 120g con cheddar y salsa Hulk">
+                <p>Cheese Burguer: Hamburguesa de carne 120g, cheddar, y salsa Hulk.</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb4.jpg"
+                    alt="Bacon Chesse Burguer Hamburguesa de carne 80g con cheddar panceta y salsa Hulk">
+                <p>Bacon Chesse Burguer: Hamburguesa de carne 80g, cheddar, panceta y salsa Hulk.</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb5.jpg"
+                    alt="Bacon Chesse Burguer Hamburguesa de carne 120g con cheddar panceta y salsa Hulk">
+                <p>Bacon Chesse Burguer: Hamburguesa de carne 120g, cheddar, panceta y salsa Hulk</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb6.jpg"
+                    alt="Bacon Burguer Hamburguesa de carne 120g con cheddar panceta barbacoa cebolla morada y salsa Hulk">
+                <p>Bacon Burguer: Hamburguesa de carne 120g, cheddar, panceta, barbacoa, cebolla morada y salsa Hulk.
+                </p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb7.jpg"
+                    alt="Chicken Burguer Hamburguesa de pollo con cheddar lechuga tomate y salsa Hulk">
+                <p>Chicken Burguer: Hamburguesa de pollo, cheddar, lechuga, tomate y salsa Hulk</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb8.jpg"
+                    alt="Super Hulk Hamburguesa de carne 120gr con cheddar lechuga pepinillos cebolla y salsa Hulk">
+                <p>Super Hulk: Hamburguesa de carne 120gr, cheddar, lechuga, pepinillos, cebolla y salsa Hulk</p>
+            </div>
+
+            <div class="hamburguesa_style">
+                <img src="../assets/imagenes/hamb9.jpg"
+                    alt="Cheese Burguer Hamburguesa de carne 80gr con cheddar y salsa Hulk">
+                <p>Cheese Burguer: Hamburguesa de carne 80gr, cheddar, y salsa Hulk</p>
+            </div>
+        </div>                  
     </main>
 
     <footer>
@@ -115,15 +136,15 @@
 
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank"><img src="../assets/imagenes/Facebook2.png"
-                        alt="logo_facebook"></a>
+                        alt="logo de facebook"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="../assets/imagenes/instagram2.png"
-                        alt="logo_ig"></a>
+                        alt="logo de instagram"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src="../assets/imagenes/twitter2.png"
-                        alt="logo_twitter"></a>
+                        alt="logo de twitter"></a>
             </div>
 
             <div class="logo_footer">
-                <img src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
+                <img src="../assets/imagenes/LogoBurguer.png" alt="logo de HulkBurguers">
             </div>
             <div class="info_container">
                 <div class="info">
