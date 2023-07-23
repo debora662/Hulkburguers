@@ -556,7 +556,7 @@ a {
         font-size: 3rem;
     }
 
-    /*Nosotros main*/
+    /*Nosotros Main*/
     .art3 img {
         border-radius: 30px;
         border: solid 0.2rem rgb(228, 225, 225);
@@ -577,8 +577,12 @@ a {
     .hamburguesa_style p {
         width: 80%;
         height: auto;
+    }    
+    
+    .maps {
+        max-width: 100%;
     }
-
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -643,6 +647,13 @@ a {
     .logo_footer {
         display: none;
     }
+
+    #margins {
+        display:flex;
+        flex-direction: row;
+        align-items: center;   
+        gap: 20px;    
+       } 
 }
 
 
@@ -677,6 +688,18 @@ a {
     .item3 h2 {
         font-size: 2.5rem;
     }
+
+   #margins {
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 30px;    
+   } 
+
+   .maps {
+    display: flex;
+    flex-direction: column-reverse;
+   }
 }
 
 /* MOBILE*/
