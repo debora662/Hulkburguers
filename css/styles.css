@@ -348,15 +348,16 @@ footer {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+    margin-bottom: 70px;    
 }
 
 .hamburguesa_style {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    align-items: center;}
 
 .hamburguesa_style img {
+    border: solid 0.2rem rgb(228, 225, 225);
     width: 320px;
     height: 280px;
     border-radius: 20px;
@@ -375,10 +376,6 @@ footer {
     max-width: 100%;
 }
 
-#bg-color { /* color card */
-    background-color: rgb(139, 135, 135);
-}
-
 #margins {
     margin-top: 50px;
     margin-bottom: 60px;
@@ -386,8 +383,7 @@ footer {
 
 .title-locales {    
     text-align: center;
-    margin-top: 50px;
-    /* margin-bottom: 60px; */
+    margin-top: 50px;    
 }
 
 .title-locales h2 {
@@ -398,15 +394,14 @@ footer {
 }
 
 .title-card {
-    color: black;
+    color: white;
     font-family: Breeze;
     font-weight: 500;
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem;    
 }
 
 .text-card {
-    color: black;       
+    color: white;       
     font-weight: 450;
 }
 
