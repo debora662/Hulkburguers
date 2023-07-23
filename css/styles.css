@@ -370,25 +370,64 @@ footer {
 }
 
 /* LOCALES */
-#locales img {
-    width: 350px;
-    height: 300px;
-    border-radius: 20px;
-    margin-left: 80px;
-    margin-top: 100px;
+.img-sector img {
+    /* img Lamparas */
+    max-width: 100%;
 }
 
-#texto-local p {
-    display: inline-block;
-    color: white;
-    font-family: lato;
-    font-weight: 800;
-    margin-left: 110px;
-    margin-top: 10px;
+#bg-color { /* color card */
+    background-color: rgb(139, 135, 135);
+}
+
+#margins {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.title-locales {    
     text-align: center;
-    width: 320px;
+    margin-top: 50px;
+    /* margin-bottom: 60px; */
 }
 
+.title-locales h2 {
+    font-family: saty;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.title-card {
+    color: black;
+    font-family: Breeze;
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+}
+
+.text-card {
+    color: black;       
+    font-weight: 450;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.maps p {
+    font-family: saty;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+
+/* CONTACTO */
 .texto-form {
     font-family: lato;
     font-weight: 800;
@@ -716,7 +755,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;        
+        margin-bottom: 50px;
     }
 
     .hamburguesa_style img {
@@ -726,7 +765,7 @@ a {
     .hamburguesa_style p {
         max-width: 50%;
     }
-    
+
 
     .container-article3 p {
         color: white;
