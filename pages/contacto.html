@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="../assets/icono/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto - Hulk Burguers</title>
 </head>
@@ -17,31 +17,35 @@
         <div class="title-container">
             <h1 class="title">HulkBurguers</h1>
         </div>
-        <nav class="navbar navbar-expand" id="bg_color">
-            <div class="container-fluid d-flex justify-content-center ">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-items">
-                        <a class="links" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./menu.html">Menu</a>
-                    </li>
-                    <div class="container">
-                        <img id="margin_left" src="../assets/imagenes/LogoBurguer.png" alt="logo_hulkburguers"
-                            width="100" height="100">
-                        </a>
-                    </div>
-                    <li class="nav-items">
-                        <a class="links" href="./locales.html">Locales</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="links" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- navbar bootstrap -->
+        <nav class="navbar navbar-expand-sm" id="bg_color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#options"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="options">
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center" id="list-ul">
+                        <li class="nav-items">
+                            <a class="links" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-items logo-mobile-hide">
+                            <img id="logo_nav" src="../assets/imagenes/LogoBurguer.png" alt="logo de hulkburguers">
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./locales.html">Locales</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="links" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -49,45 +53,63 @@
     <main>
         <article>
             <div class="img-sector">
-                <img src="../assets/imagenes/contacto.jpg" alt="img-contacto">
+                <img src="../assets/imagenes/contacto.jpg"
+                    alt="foto de computadora y hamburguesa con enunciado contacto">
             </div>
-            <div class="titulo2">
+            <div class="title-contacto">
                 <h2>Nos encanta saber de vos!!!</h2>
-            </div>
-            <div class="texto-form">
                 <p>No dudes en ponerte en contacto con nosotros si tienes dudas o
                     sugerencias... Escríbenos y en breve nos pondremos en contacto contigo</p>
             </div>
         </article>
 
-        <form action="" method="post" enctype="text/plain">
-            <fieldset>
-                <legend id="estilo">Introduzca sus Datos</legend>
-                <div class="labels">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+        <!-- Form bootstrap -->
+        <div class="container mt-4 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10 col-12 border p-4">
+                    <form action="" method="post" enctype="text/plain">
+                        <div class="row mb-4">
+                            <label for="nombre" class="col-sm-2 col-form-label text-white">Nombre:</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="nombre" class="form-control" id="nombre"
+                                    placeholder="Escribe tu nombre">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="email" class="col-sm-2 col-form-label text-white">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" name="email" class="form-control" id="email"
+                                    placeholder="Escribe tu email">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="telefono" class="col-sm-2 col-form-label text-white">Teléfono:</label>
+                            <div class="col-sm-10">
+                                <input type="tel" name="telefono" class="form-control" id="telefono"
+                                    placeholder="Escribe tu teléfono">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="asunto" class="col-sm-2 col-form-label text-white">Asunto:</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="asunto" class="form-control" id="asunto"
+                                    placeholder="Escribe un asunto">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="mensaje" class="col-sm-2 col-form-label text-white">Mensaje:</label>
+                            <div class="col-sm-10">
+                                <textarea name="mensaje" class="form-control" id="mensaje" rows="5"
+                                    placeholder="Deja aquí tu comentario..."></textarea>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="labels">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Escribe tu Email">
-                </div>
-                <div class="labels">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </div>
-                <div class="labels">
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Escribe un asunto">
-                </div>
-                <div class="msg">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea>
-                </div>
-                <div id="boton">
-                    <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
-                </div>
-            </fieldset>
-        </form>
+            </div>
+        </div>      
     </main>
 
     <footer>
@@ -105,15 +127,15 @@
 
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank"><img src="../assets/imagenes/Facebook2.png"
-                        alt="logo_facebook"></a>
+                        alt="logo de facebook"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="../assets/imagenes/instagram2.png"
-                        alt="logo_ig"></a>
+                        alt="logo de instagram"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src="../assets/imagenes/twitter2.png"
-                        alt="logo_twitter"></a>
+                        alt="logo de twitter"></a>
             </div>
 
             <div class="logo_footer">
-                <img src="../assets/imagenes/LogoBurguer.png" alt="Hulk Burguers">
+                <img src="../assets/imagenes/LogoBurguer.png" alt="logo de HulkBurguers">
             </div>
             <div class="info_container">
                 <div class="info">
