@@ -659,27 +659,28 @@ a {
     /* Menu titulo */
     .container-images {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        margin-bottom: 50px;
+        justify-content: center;
     }
 
     .hamburguesa_style img {
-        max-width: 55%;
+        max-width: 85%;
+        height: auto;
     }
 
     .hamburguesa_style p {
         max-width: 50%;
+        font-size: 13px;
     }
 
-
-    .container-article3 p {
-        font-size: 0.8rem;
-        width: 70%;
+    .container-article3 p {        
+        font-size: 13px;
+        width: 80%;
     }
 
     .container-article3 h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     /* Contacto */
