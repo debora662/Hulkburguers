@@ -160,7 +160,11 @@ footer {
     align-items: center;
     border-bottom: 2px solid rgb(7, 7, 7);
     padding: 0;
-    width: fit-content;
+    width: fit-content;    
+}
+
+#navegacion a {
+    font-size: 1.2rem;
 }
 
 .follow {
@@ -173,8 +177,7 @@ footer {
     font-size: 1rem;
 }
 
-.social-icons {
-    /* background-color: orange; */
+.social-icons {   
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -219,13 +222,13 @@ footer {
 .legal_footer {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-
+    margin-left: 20px;   
 }
 
 .legal_footer p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: black;   
+    font-size: 14px;
 }
 
 /* NOSOTROS */
@@ -751,6 +754,10 @@ a {
 
     .info p {
         font-size: 10px;
+    }
+    
+    .legal_footer {
+        margin:0;
     }
 
     .legal_footer p {
