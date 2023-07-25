@@ -628,8 +628,7 @@ a {
 /* TABLET */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px;
-        height: 100vh;
+        font-size: 14px;        
     }
 
     /*Home main */
@@ -671,11 +670,7 @@ a {
 }
 
 /* MOBILE*/
-@media (min-width: 0px) and (max-width: 576px) {
-    body {
-        height: 100vh;
-    }
-
+@media (min-width: 0px) and (max-width: 576px) {   
     /*logo del nav */
     .logo-mobile-hide {
         display: none;
