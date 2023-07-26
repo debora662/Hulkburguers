@@ -693,7 +693,7 @@ a {
 
     .card {
         margin-bottom: 50px;
-        max-width: 60%;
+        max-width: 75%;
     }
 
     .card h5 {
@@ -712,14 +712,12 @@ a {
 
     .maps {
         display: flex;
-        flex-direction: column;        
-        
+        flex-direction: column;
     }
 
     .maps p {
-        font-size: 1.8rem;
-        order:1;
-        max-width: 30%;       
+        font-size: 1.3rem;
+        order: 1;
     }
 
     .maps iframe {
