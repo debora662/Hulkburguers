@@ -366,11 +366,11 @@ a {
 }
 
 #margins {
-    margin-top: 20px; 
-    margin-bottom: 50px;  
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.title-locales {    
+.title-locales {
     text-align: center;
     margin-top: 50px;
 }
@@ -693,14 +693,17 @@ a {
 
     .card {
         margin-bottom: 50px;
+        max-width: 60%;
     }
 
     .card h5 {
         font-size: 1.1rem;
+        text-align: center;
     }
 
     .card p {
         font-size: 13px;
+        text-align: center;
     }
 
     #margins {
@@ -709,15 +712,19 @@ a {
 
     .maps {
         display: flex;
-        flex-direction: column-reverse;
-    }   
+        flex-direction: column;        
+        
+    }
 
     .maps p {
         font-size: 1.8rem;
+        order:1;
+        max-width: 30%;       
     }
 
     .maps iframe {
-        max-width: 70%;
+        max-width: 75%;
+        order: 2;
     }
 
     .title-locales h2 {
