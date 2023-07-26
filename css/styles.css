@@ -366,10 +366,11 @@ a {
 }
 
 #margins {
-    margin-top: 20px;   
+    margin-top: 20px; 
+    margin-bottom: 50px;  
 }
 
-.title-locales {
+.title-locales {    
     text-align: center;
     margin-top: 50px;
 }
@@ -694,6 +695,14 @@ a {
         margin-bottom: 50px;
     }
 
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
     .maps {
         display: flex;
         flex-direction: column-reverse;
@@ -703,21 +712,21 @@ a {
         font-size: 1.8rem;
     }
 
+    .maps iframe {
+        max-width: 80%;
+    }
+
     .title-locales h2 {
         font-size: 1.8rem;
     }
 
-
-
-
-
     /* Contacto */
     .title-contacto h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .title-contacto p {
-        font-size: 0.8rem;
-        width: 70%;
+        font-size: 13px;
+        width: 80%;
     }
 }
