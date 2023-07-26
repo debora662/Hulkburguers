@@ -19,7 +19,7 @@
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -58,7 +58,6 @@ main {
     grid-template-rows: 1fr 1fr;
     margin-top: 30px;
     margin-bottom: 30px;
-    gap: 20px
 }
 
 .item1 {
@@ -144,12 +143,12 @@ footer {
     ;
 }
 
-.botonera-footer {
+.botonera-footer {    
     margin-top: 10px;
 }
 
-.botonera-footer li {
-    margin: 0 20px;
+.botonera-footer li {   
+    margin: 0 20px 0 0;    
 }
 
 #navegacion {
@@ -159,6 +158,8 @@ footer {
     align-items: center;
     border-bottom: 2px solid rgb(7, 7, 7);
     width: fit-content;
+    padding: 0px;
+    margin-left: 20px;
 }
 
 .follow {
@@ -175,7 +176,7 @@ footer {
     display: flex;
     align-items: flex-start;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .social-icons img {
@@ -337,6 +338,8 @@ a {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     margin-bottom: 70px;
+    /*  padding-left: 80px;
+    padding-right: 80px; */
 }
 
 .hamburguesa_style {
@@ -488,6 +491,29 @@ a {
     width: 100px;
     height: 100px;
 }
+
+
+/* DESKTOP */
+@media screen and (width: 1024px) and (height: 600px) {      
+    /* .item4 img {
+        width: 25em;
+        height: 18em;
+    }
+
+    .item2 {
+        max-width: 98%;
+    } */    
+}
+
+
+/* @media screen and (max-width: 768px) {
+   
+
+    .logo_footer, .follow {
+        display: none;
+    } 
+} */
+
 
 
 /* MOBILE*/
