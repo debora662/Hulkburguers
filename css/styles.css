@@ -494,15 +494,11 @@ a {
 
 
 /* DESKTOP */
-@media screen and (width: 1024px) and (height: 600px) {      
-    /* .item4 img {
-        width: 25em;
+@media screen and (width: 1024px) {      
+   .item4 img {
+        width: 26em;
         height: 18em;
-    }
-
-    .item2 {
-        max-width: 98%;
-    } */    
+    }     
 }
 
 
