@@ -703,6 +703,10 @@ a {
         font-size: 13px;
     }
 
+    #margins {
+        margin: 0;
+    }
+
     .maps {
         display: flex;
         flex-direction: column-reverse;
