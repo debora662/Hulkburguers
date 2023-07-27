@@ -183,7 +183,7 @@ a {
   font-size: 1.3rem;
 }
 
-/* Bootstrap css */
+/* Bootstrap scss */
 #bg_color {
   background-color: #ECC704;
 }
@@ -204,6 +204,67 @@ a {
 #logo_nav {
   width: 100px;
   height: 100px;
+}
+
+.container-article2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 40px;
+}
+.container-article2 .art1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.container-article2 .art1 p {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  color: white;
+  font-weight: 800;
+  width: 90%;
+}
+.container-article2 .art1 h2 {
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.container-article2 .art2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  order: 2;
+}
+.container-article2 .art2 p {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  color: white;
+  font-weight: 800;
+  width: 90%;
+}
+.container-article2 .art2 h2 {
+  color: white;
+  font-family: "saty", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.container-article2 .art3 {
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-article2 .art3 img {
+  border-radius: 30px;
+  border: solid 0.2rem white;
+  max-width: 90%;
 }
 
 .bienvenidos-container {
