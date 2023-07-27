@@ -5,18 +5,12 @@
     margin-top: 50px;
 
     h2 {
-        font-family: $font-saty;
-        color: map-get($colores, "blanco");
-        font-weight: 600;
-        font-size: 3rem;
+       @include title-comun;
     }
 
     p {
         width: 50%;
-        color: map-get($colores, "blanco");
-        text-align: center;
-        font-family: $font-lato;
-        font-weight: 800;
+        @include p-comun;
     }
 }
 

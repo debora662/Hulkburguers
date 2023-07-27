@@ -14,10 +14,7 @@
     margin-top: 50px;
 
     h2 {
-        font-family: $font-saty;
-        color: map-get($colores, "blanco");
-        font-weight: 600;
-        font-size: 3rem;
+        @include title-comun;
     }
 }
 
