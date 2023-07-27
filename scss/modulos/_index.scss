@@ -56,18 +56,11 @@ body {
                 justify-content: center;
 
                 p {
-                    text-align: center;
-                    font-family: $font-lato;
-                    color: map-get($colores, "blanco");
-                    font-weight: 800;
-                    width: 90%;
+                    @include p-comun;
                 }
 
                 h2 {
-                    font-family: $font-saty;
-                    color: map-get($colores, "blanco");
-                    font-weight: 600;
-                    font-size: 3rem;
+                    @include title-comun;
                 }
             }
 

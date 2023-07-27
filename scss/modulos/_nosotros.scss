@@ -12,18 +12,11 @@
       margin-top: 40px;
   
       p {
-        text-align: center;
-        font-family: $font-lato;
-        color: map-get($colores, "blanco");
-        font-weight: 800;
-        width: 90%;
+        @include p-comun;
       }
   
       h2 {
-        font-family: $font-saty;
-        color: map-get($colores, "blanco");
-        font-weight: 600;
-        font-size: 3rem;
+       @include title-comun;
       }
     }
   
@@ -36,18 +29,11 @@
       order: 2;
   
       p {
-        text-align: center;
-        font-family: $font-lato;
-        color: map-get($colores, "blanco");
-        font-weight: 800;
-        width: 90%;
+        @include p-comun;
       }
   
       h2 {
-        color: map-get($colores, "blanco");
-        font-family: $font-saty;
-        font-size: 3rem;
-        font-weight: 600;
+        @include title-comun;
       }
     }
   

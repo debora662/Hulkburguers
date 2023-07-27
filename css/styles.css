@@ -249,10 +249,10 @@ a {
   width: 90%;
 }
 .container-article2 .art2 h2 {
-  color: white;
   font-family: "saty", sans-serif;
-  font-size: 3rem;
+  color: white;
   font-weight: 600;
+  font-size: 3rem;
 }
 .container-article2 .art3 {
   grid-column: 2/span 1;
@@ -281,10 +281,11 @@ a {
   font-size: 3rem;
 }
 .container-article3 p {
-  color: white;
-  font-family: "lato", sans-serif;
-  font-weight: 800;
   text-align: center;
+  font-family: "lato", sans-serif;
+  color: white;
+  font-weight: 800;
+  width: 90%;
   width: 40%;
 }
 
@@ -446,7 +447,7 @@ a {
   }
 }
 /* DESKTOP */
-@media screen and (width: 1024px) {
+@media (max-width: 1024px) {
   /* Home */
   .item4 img {
     width: 26em;
@@ -468,7 +469,7 @@ a {
   }
 }
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /* Main Home */
   .article-container {
     display: flex;
@@ -567,7 +568,7 @@ a {
   }
 }
 /* MOBILE*/
-@media (min-width: 0px) and (max-width: 576px) {
+@media (max-width: 576px) {
   /*logo del nav */
   .logo-mobile-hide {
     display: none;

@@ -1,5 +1,5 @@
 /* DESKTOP */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     /* Home */
     .item4 img {
         width: 26em;
@@ -25,7 +25,7 @@
 }
 
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     /* Main Home */
     .article-container {
@@ -148,7 +148,7 @@
 
 
 /* MOBILE*/
-@media (min-width: 0px) and (max-width: 576px) {
+@media (max-width: 576px) {
 
     /*logo del nav */
     .logo-mobile-hide {
