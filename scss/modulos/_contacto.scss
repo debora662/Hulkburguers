@@ -1,7 +1,5 @@
 .title-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, nowrap, center,center);     
     margin-top: 50px;
 
     h2 {
@@ -15,9 +13,7 @@
 }
 
 .boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, nowrap, center,center); 
     margin-top: 20px;
 
     button {

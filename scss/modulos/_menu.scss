@@ -1,7 +1,5 @@
 .container-article3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, nowrap, center,center);     
 
     h2 {
         margin-top: 30px;
@@ -23,10 +21,8 @@
     padding-right: 80px;
 
     .hamburguesa_style {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        @include flexbox(column, nowrap, center,center); 
+        
         img {
             border: solid 0.2rem map-get($colores, "blanco");
             width: 320px;
