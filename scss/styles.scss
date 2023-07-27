@@ -1,0 +1,10 @@
+@import "./modulos/variables";
+@import "./modulos/mixin";
+@import "./modulos/index";
+@import "./modulos/animaciones";
+
+
+
+*{
+    @include reset;
+}

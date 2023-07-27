@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Breeze";
+    src: url(../assets/fonts/Bree_Serif.ttf);
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../assets/fonts/Lato-Thin.ttf);
+}
+
+@font-face {
+    font-family: "saty";
+    src: url(../assets/fonts/Satisfy-Regular.ttf);
+}
+
+/* Variables-Fonts */
+$font-breeze: "Breeze", sans-serif;
+$font-lato: "lato", sans-serif;
+$font-saty: "saty", sans-serif;
+
+
+/* Mapa Colores */
+$colores: (
+    "blanco": white,
+    "negro": black,
+    "mostaza": #ECC704,
+    "gris":  rgb(228, 225, 225),
+)
+
+
+
