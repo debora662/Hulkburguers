@@ -1,0 +1,46 @@
+.title-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    h2 {
+        font-family: $font-saty;
+        color: map-get($colores, "blanco");
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    p {
+        width: 50%;
+        color: map-get($colores, "blanco");
+        text-align: center;
+        font-family: $font-lato;
+        font-weight: 800;
+    }
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+        background-color: map-get($colores, "blanco");
+        font-family: $font-breeze;
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 6px;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    font-family: "Breeze";
+    text-decoration: none;
+    color: map-get($colores, "negro");
+}

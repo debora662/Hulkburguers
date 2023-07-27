@@ -1,0 +1,54 @@
+.container-article3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-top: 30px;
+        font-family: $font-saty;
+        color: map-get($colores, "blanco");
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    p {
+        color: map-get($colores, "blanco");
+        font-family: $font-lato;
+        font-weight: 800;
+        text-align: center;
+        width: 40%;
+    }
+}
+
+.container-images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    .hamburguesa_style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border: solid 0.2rem map-get($colores, "blanco");
+            width: 320px;
+            height: 280px;
+            border-radius: 20px;
+            margin-top: 20px;
+
+            &:hover {
+                border: double 0.6rem map-get($colores, "blanco");
+            }
+        }
+
+        p {
+            color: map-get($colores, "blanco");
+            width: 300px;
+            text-align: center;
+        }
+    }
+}

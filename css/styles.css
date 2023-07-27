@@ -267,6 +267,146 @@ a {
   max-width: 90%;
 }
 
+.container-article3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-article3 h2 {
+  margin-top: 30px;
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.container-article3 p {
+  color: white;
+  font-family: "lato", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  width: 40%;
+}
+
+.container-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.container-images .hamburguesa_style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-images .hamburguesa_style img {
+  border: solid 0.2rem white;
+  width: 320px;
+  height: 280px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.container-images .hamburguesa_style img:hover {
+  border: double 0.6rem white;
+}
+.container-images .hamburguesa_style p {
+  color: white;
+  width: 300px;
+  text-align: center;
+}
+
+.img-sector img {
+  max-width: 100%;
+}
+
+#margins {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.title-locales {
+  text-align: center;
+  margin-top: 50px;
+}
+.title-locales h2 {
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.title-card {
+  color: white;
+  font-family: "Breeze", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.text-card {
+  color: white;
+  font-weight: 450;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.maps p {
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 30px;
+  text-decoration: underline;
+}
+
+.title-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.title-contacto h2 {
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.title-contacto p {
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 800;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.boton button {
+  background-color: white;
+  font-family: "Breeze", sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Breeze";
+  text-decoration: none;
+  color: black;
+}
+
 .bienvenidos-container {
   display: flex;
   justify-content: center;

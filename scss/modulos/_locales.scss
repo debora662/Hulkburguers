@@ -1,0 +1,50 @@
+.img-sector {
+    img {
+        max-width: 100%;
+    }
+}
+
+#margins {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.title-locales {
+    text-align: center;
+    margin-top: 50px;
+
+    h2 {
+        font-family: $font-saty;
+        color: map-get($colores, "blanco");
+        font-weight: 600;
+        font-size: 3rem;
+    }
+}
+
+.title-card {
+    color: map-get($colores, "blanco");
+    font-family: $font-breeze;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.text-card {
+    color: map-get($colores, "blanco");
+    font-weight: 450;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    p {
+        font-family: $font-saty;
+        color: map-get($colores, "blanco");
+        font-weight: 600;
+        font-size: 2rem;
+        margin-left: 30px;
+        text-decoration: underline;
+    }
+}
