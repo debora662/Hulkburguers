@@ -175,8 +175,11 @@ footer .social-icons img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 20px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .article-container .item1 {
   display: flex;
@@ -187,9 +190,13 @@ footer .social-icons img {
 }
 .article-container .item1 iframe {
   width: 80%;
-  height: 19em;
+  height: 20em;
   border-radius: 25px;
   border: solid 0.2rem rgb(228, 225, 225);
+  filter: grayscale(100%);
+}
+.article-container .item1 iframe:hover {
+  filter: none;
 }
 .article-container .item2,
 .article-container .item3 {
@@ -223,7 +230,7 @@ footer .social-icons img {
 }
 .article-container .item4 img {
   width: 31em;
-  height: 21em;
+  height: 20em;
   border-radius: 30px;
   border: solid 0.2rem rgb(228, 225, 225);
 }
@@ -233,6 +240,8 @@ footer .social-icons img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .container-article2 .art1 {
   display: flex;
@@ -313,12 +322,13 @@ footer .social-icons img {
   font-weight: 800;
   width: 90%;
   width: 40%;
+  margin-bottom: 50px;
 }
 
 .container-images {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
   margin-bottom: 70px;
   padding-left: 80px;
   padding-right: 80px;
@@ -335,16 +345,17 @@ footer .social-icons img {
   width: 320px;
   height: 280px;
   border-radius: 20px;
-  margin-top: 20px;
 }
 .container-images .hamburguesa_style img:hover {
   border: double 0.6rem white;
 }
 .container-images .hamburguesa_style p {
   color: white;
-  width: 300px;
+  width: 310px;
+  height: 100px;
   text-align: center;
   font-size: 14px;
+  margin-top: 6px;
 }
 
 .img-sector img {

@@ -23,9 +23,11 @@
 
 @mixin p-hamburguesa {
     color: map-get($colores, "blanco");
-    width: 300px;
+    width: 310px;
+    height: 100px;
     text-align: center;
     font-size: 14px;
+    margin-top: 6px;
 }
 
 @mixin grid-layout {

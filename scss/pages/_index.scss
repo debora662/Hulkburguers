@@ -1,46 +1,50 @@
           .article-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin-top: 30px;
-            margin-bottom: 30px;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr;
+              gap: 20px;
+              margin-top: 30px;
+              margin-bottom: 70px;
+              padding-left: 30px;
+              padding-right: 30px;
 
-            .item1 {
-                @include flexbox (column, nowrap, center, center);               
+              .item1 {
+                  @include flexbox (column, nowrap, center, center);
 
-                iframe {
-                    width: 80%;
-                    height: 19em;
-                    border-radius: 25px;
-                    border: solid 0.2rem map-get($colores, "gris");
-                }
-            }
+                  iframe {
+                      width: 80%;
+                      height: 20em;
+                      border-radius: 25px;
+                      border: solid 0.2rem map-get($colores, "gris");
+                      filter: grayscale(100%);
 
-            .item2,
-            .item3 {
-                @include flexbox (column, nowrap, center, center);               
+                      &:hover {
+                          filter: none;
+                      }
+                  }
+              }
 
-                p {
-                    @include p-comun;
-                }
+              .item2,
+              .item3 {
+                  @include flexbox (column, nowrap, center, center);
 
-                h2 {
-                    @include title-comun;
-                }
-            }
+                  p {
+                      @include p-comun;
+                  }
 
-            .item4 {
-                @include flexbox (column, nowrap, center, center);
+                  h2 {
+                      @include title-comun;
+                  }
+              }
 
-                img {
-                    width: 31em;
-                    height: 21em;
-                    border-radius: 30px;
-                    border: solid 0.2rem map-get($colores, "gris");
-                }
-            }
-        }
-    
+              .item4 {
+                  @include flexbox (column, nowrap, center, center);
 
-    
-
+                  img {
+                      width: 31em;
+                      height: 20em;
+                      border-radius: 30px;
+                      border: solid 0.2rem map-get($colores, "gris");
+                  }
+              }
+          }

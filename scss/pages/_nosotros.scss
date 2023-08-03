@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   
     .art1 {
       @include flexbox(column, nowrap, space-evenly,center);      
