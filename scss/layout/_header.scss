@@ -1,0 +1,41 @@
+header {
+    grid-area: header;
+
+    .title-container {
+        text-align: center;
+
+        .title {
+            background-image: url("../assets/imagenes/fondoheader1.webp");
+            text-indent: -9999px;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+        }
+    }
+}
+
+/* Bootstrap scss */
+#bg_color {
+    background-color: map-get($colores, "mostaza");
+
+    .nav-items {
+        margin-right: 50px;
+
+        .links {
+            font-family: "breeze";
+            text-decoration: none;
+            color: map-get($colores, "negro");
+            font-weight: 500;
+            font-size: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#logo_nav {
+    width: 100px;
+    height: 100px;
+} 

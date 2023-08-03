@@ -1,7 +1,7 @@
 {
   "name": "hulk-burguers",
   "version": "1.0.0",
-  "description": "",
+  "description": "¡Hola! Te doy la bienvenida a HulkBurguers, un lugar donde encontrarás las mejores hamburguesas de la ciudad. A continuación, te proporcionamos información sobre mi sitio web y las tecnologías que he empleado en su desarrollo.\r ### Descripción\r HulkBurguers es una plataforma en línea que promueve nuestra cadena de hamburgueserías, donde ofrecemos una amplia variedad de deliciosas hamburguesas con ingredientes frescos y sabrosos. Nuestro objetivo es brindar una experiencia inigualable a nuestros clientes y convertirnos en su destino favorito para disfrutar de hamburguesas de alta calidad.\r ### Contenido del repositorio\r En este repositorio encontrarás los siguientes archivos y carpetas:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

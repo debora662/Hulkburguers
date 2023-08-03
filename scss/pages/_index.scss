@@ -1,0 +1,46 @@
+          .article-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            .item1 {
+                @include flexbox (column, nowrap, center, center);               
+
+                iframe {
+                    width: 80%;
+                    height: 19em;
+                    border-radius: 25px;
+                    border: solid 0.2rem map-get($colores, "gris");
+                }
+            }
+
+            .item2,
+            .item3 {
+                @include flexbox (column, nowrap, center, center);               
+
+                p {
+                    @include p-comun;
+                }
+
+                h2 {
+                    @include title-comun;
+                }
+            }
+
+            .item4 {
+                @include flexbox (column, nowrap, center, center);
+
+                img {
+                    width: 31em;
+                    height: 21em;
+                    border-radius: 30px;
+                    border: solid 0.2rem map-get($colores, "gris");
+                }
+            }
+        }
+    
+
+    
+

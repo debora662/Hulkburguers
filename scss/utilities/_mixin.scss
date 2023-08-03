@@ -1,8 +1,3 @@
-@mixin reset {
-    margin: 0;
-    padding: 0;
-}
-
 @mixin flexbox ($direction, $wrap, $justify, $align) {
     display: flex;
     flex-direction: $direction;
@@ -30,6 +25,7 @@
     color: map-get($colores, "blanco");
     width: 300px;
     text-align: center;
+    font-size: 14px;
 }
 
 @mixin grid-layout {
