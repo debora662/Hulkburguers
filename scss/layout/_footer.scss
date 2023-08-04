@@ -11,11 +11,12 @@ footer {
 
             li {
                 margin: 0 20px 0 0;
+                list-style-type: none;
             }
 
             #navegacion {
                 /* ul */
-                @include flexbox (row, nowrap, flex-start, center);                    
+                @include flexbox (row, nowrap, flex-start, center);
                 border-bottom: 2px solid map-get($colores, "negro");
                 width: fit-content;
                 padding: 0px;
@@ -23,13 +24,16 @@ footer {
 
                 a {
                     font-size: 20px;
+                    font-family: "Breeze";
+                    text-decoration: none;
+                    color: map-get($colores, "negro");
                 }
             }
         }
     }
 
     .follow {
-        @include flexbox(column, nowrap, center, center);            
+        @include flexbox(column, nowrap, center, center);
         font-family: $font-breeze;
         text-decoration: none;
         color: map-get($colores, "negro");
@@ -38,7 +42,7 @@ footer {
     }
 
     .social-icons {
-        @include flexbox(row, nowrap, flex-start, flex-start);          
+        @include flexbox(row, nowrap, flex-start, flex-start);
         margin-top: 10px;
 
         img {
@@ -53,7 +57,7 @@ footer {
 
 .logo_footer {
     @include flexbox(column, nowrap, flex-end, center);
-    
+
     img {
         width: 140px;
         height: 140px;
@@ -61,10 +65,10 @@ footer {
 }
 
 .info_container {
-    @include flexbox(column, nowrap, center, flex-start);        
+    @include flexbox(column, nowrap, center, flex-start);
 
     .info {
-        @include flexbox(row, nowrap, flex-start, center);            
+        @include flexbox(row, nowrap, flex-start, center);
 
         p {
             margin-left: 20px;
@@ -76,7 +80,7 @@ footer {
 }
 
 .legal_footer {
-    @include flexbox(column, nowrap, center, center);        
+    @include flexbox(column, nowrap, center, center);
     margin-left: 20px;
 
     p {

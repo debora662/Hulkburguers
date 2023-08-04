@@ -1,9 +1,9 @@
 .title-contacto {
-    @include flexbox(column, nowrap, center,center);     
+    @include flexbox(column, nowrap, center, center);
     margin-top: 50px;
 
     h2 {
-       @include title-comun;
+        @include title-comun;
     }
 
     p {
@@ -13,7 +13,7 @@
 }
 
 .boton {
-    @include flexbox(column, nowrap, center,center); 
+    @include flexbox(column, nowrap, center, center);
     margin-top: 20px;
 
     button {
@@ -22,15 +22,10 @@
         font-size: 18px;
         padding: 5px;
         border-radius: 6px;
+
+        &:hover {
+            background-color: map-get($colores, "bordo");
+            color: map-get($colores, "blanco");                      
+        }
     }
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    font-family: "Breeze";
-    text-decoration: none;
-    color: map-get($colores, "negro");
 }

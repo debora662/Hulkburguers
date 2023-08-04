@@ -80,6 +80,7 @@ footer .container_footer .botonera-footer {
 }
 footer .container_footer .botonera-footer li {
   margin: 0 20px 0 0;
+  list-style-type: none;
 }
 footer .container_footer .botonera-footer #navegacion {
   /* ul */
@@ -95,6 +96,9 @@ footer .container_footer .botonera-footer #navegacion {
 }
 footer .container_footer .botonera-footer #navegacion a {
   font-size: 20px;
+  font-family: "Breeze";
+  text-decoration: none;
+  color: black;
 }
 footer .follow {
   display: flex;
@@ -453,15 +457,9 @@ footer .social-icons img {
   padding: 5px;
   border-radius: 6px;
 }
-
-li {
-  list-style-type: none;
-}
-
-a {
-  font-family: "Breeze";
-  text-decoration: none;
-  color: black;
+.boton button:hover {
+  background-color: #af052c;
+  color: white;
 }
 
 .bienvenidos-container {
