@@ -394,6 +394,7 @@ footer .social-icons img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
   margin-bottom: 50px;
 }
 .maps p {
@@ -403,6 +404,15 @@ footer .social-icons img {
   font-size: 2rem;
   margin-left: 30px;
   text-decoration: underline;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+}
+.card:hover {
+  transform: scale(1.07);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .title-contacto {

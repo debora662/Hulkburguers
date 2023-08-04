@@ -34,8 +34,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
     margin-bottom: 50px;
-
+    
     p {
         font-family: $font-saty;
         color: map-get($colores, "blanco");
@@ -45,3 +46,16 @@
         text-decoration: underline;
     }
 }
+
+.card {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+
+    &:hover {
+        transform: scale(1.07);
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+
+
