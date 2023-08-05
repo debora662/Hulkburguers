@@ -15,7 +15,6 @@ footer {
             }
 
             #navegacion {
-                /* ul */
                 @include flexbox (row, nowrap, flex-start, center);
                 border-bottom: 2px solid map-get($colores, "negro");
                 width: fit-content;
@@ -26,7 +25,12 @@ footer {
                     font-size: 20px;
                     font-family: "Breeze";
                     text-decoration: none;
-                    color: map-get($colores, "negro");
+                    color: map-get($colores, "negro");                                        
+
+                    &:hover {
+                        color: map-get($colores, "blanco");
+                        
+                    }
                 }
             }
         }

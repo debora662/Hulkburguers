@@ -19,17 +19,24 @@ header {
     background-color: map-get($colores, "mostaza");
 
     .nav-items {
-        margin-right: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
 
         .links {
-            font-family: "breeze";
-            text-decoration: none;
+            font-family: "breeze";           
             color: map-get($colores, "negro");
             font-weight: 500;
             font-size: 20px;
+            text-decoration: none;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
 
-            &:hover {
-                text-decoration: underline;
+            &:hover,
+            &:focus {
+                background-size: 100% 2px;
             }
         }
     }
@@ -38,4 +45,4 @@ header {
 #logo_nav {
     width: 100px;
     height: 100px;
-} 
+}

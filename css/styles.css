@@ -11,7 +11,6 @@
   src: url(../assets/fonts/Satisfy-Regular.ttf);
 }
 /* Variables-Fonts */
-/* Mapa Colores */
 * {
   margin: 0;
   padding: 0;
@@ -44,17 +43,23 @@ header .title-container .title {
   background-color: #ECC704;
 }
 #bg_color .nav-items {
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 #bg_color .nav-items .links {
   font-family: "breeze";
-  text-decoration: none;
   color: black;
   font-weight: 500;
   font-size: 20px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 }
-#bg_color .nav-items .links:hover {
-  text-decoration: underline;
+#bg_color .nav-items .links:hover, #bg_color .nav-items .links:focus {
+  background-size: 100% 2px;
 }
 
 #logo_nav {
@@ -83,7 +88,6 @@ footer .container_footer .botonera-footer li {
   list-style-type: none;
 }
 footer .container_footer .botonera-footer #navegacion {
-  /* ul */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -99,6 +103,9 @@ footer .container_footer .botonera-footer #navegacion a {
   font-family: "Breeze";
   text-decoration: none;
   color: black;
+}
+footer .container_footer .botonera-footer #navegacion a:hover {
+  color: white;
 }
 footer .follow {
   display: flex;
@@ -460,6 +467,10 @@ footer .social-icons img {
 .boton button:hover {
   background-color: #af052c;
   color: white;
+}
+
+#margin-botton {
+  margin-bottom: 90px;
 }
 
 .bienvenidos-container {
