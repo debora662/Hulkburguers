@@ -138,7 +138,8 @@ footer {
             color: map-get($colores, "negro");
 
             @include mobile {
-                font-size: 12px;
+                font-size: 12.5px;   
+                margin-left: 15px;             
             }
         }
     }
@@ -155,7 +156,7 @@ footer {
 
         @include mobile {
             text-align: center;
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 }
