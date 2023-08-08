@@ -280,14 +280,10 @@ main article .article-container .item1 iframe {
   height: 300px;
   border-radius: 25px;
   border: solid 0.2rem rgb(228, 225, 225);
-  /* @include tablet {                        
-      width: 400px;
-      height: 270px;
-  } */
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item1 iframe {
-    width: 340px;
+    width: 300px;
     height: 230px;
     margin-bottom: 30px;
   }
@@ -314,7 +310,8 @@ main article .article-container .item2 p {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item2 p {
-    width: 70%;
+    font-size: 13px;
+    max-width: 80%;
   }
 }
 main article .article-container .item2 h2 {
@@ -325,7 +322,7 @@ main article .article-container .item2 h2 {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item2 h2 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
@@ -351,7 +348,8 @@ main article .article-container .item3 p {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item3 p {
-    width: 70%;
+    font-size: 13px;
+    max-width: 80%;
   }
 }
 main article .article-container .item3 h2 {
@@ -362,7 +360,7 @@ main article .article-container .item3 h2 {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item3 h2 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
@@ -385,7 +383,7 @@ main article .article-container .item4 img {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item4 img {
-    width: 340px;
+    width: 300px;
     height: 230px;
   }
 }

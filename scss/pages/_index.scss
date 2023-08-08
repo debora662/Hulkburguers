@@ -1,5 +1,5 @@
 @import "../layout/queries576";
- @import "../layout/queries768"; 
+@import "../layout/queries768";
 
 main {
     background-color: map-get($colores, "negro");
@@ -19,14 +19,14 @@ main {
                 align-items: center;
                 justify-content: center;
             }
-            
+
             @include tablet {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
             }
-            
+
             .item1 {
                 @include flexbox (column, nowrap, center, center);
 
@@ -37,16 +37,10 @@ main {
                     border: solid 0.2rem map-get($colores, "gris");
 
                     @include mobile {
-                        width: 340px;
+                        width: 300px;
                         height: 230px;
                         margin-bottom: 30px;
-                    }
-
-                    /* @include tablet {                        
-                        width: 400px;
-                        height: 270px;
-                    } */
-                    
+                    }                    
                 }
 
                 @include mobile {
@@ -61,7 +55,8 @@ main {
                     @include p-comun;
 
                     @include mobile {
-                        width: 70%;
+                        font-size: 13px;
+                        max-width: 80%;
                     }
 
                 }
@@ -70,7 +65,7 @@ main {
                     @include title-comun;
 
                     @include mobile {
-                        font-size: 2.3rem;
+                        font-size: 1.8rem;
                     }
                 }
 
@@ -89,7 +84,8 @@ main {
                     @include p-comun;
 
                     @include mobile {
-                        width: 70%;
+                        font-size: 13px;
+                        max-width: 80%;
                     }
 
                 }
@@ -98,7 +94,7 @@ main {
                     @include title-comun;
 
                     @include mobile {
-                        font-size: 2.3rem;
+                        font-size: 1.8rem;
                     }
                 }
 
@@ -118,7 +114,7 @@ main {
                     border: solid 0.2rem map-get($colores, "gris");
 
                     @include mobile {
-                        width: 340px;
+                        width: 300px;
                         height: 230px;
                     }
 
