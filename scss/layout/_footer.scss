@@ -12,7 +12,7 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            max-width: 100%;
         }
 
         .botonera-footer {
@@ -22,12 +22,15 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
             }
 
             li {
                 margin: 0 20px 0 0;
                 list-style-type: none;
+
+                @include mobile {
+                    margin: 0 5px;
+                }
             }
 
             #navegacion {
@@ -36,6 +39,16 @@ footer {
                 width: fit-content;
                 padding: 0px;
                 margin-left: 20px;
+
+
+                @include mobile {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
 
                 a {
                     font-size: 20px;
@@ -49,7 +62,7 @@ footer {
                     }
 
                     @include mobile {
-                        font-size: 1.1rem;
+                        font-size: 1rem;
                     }
 
                 }
@@ -74,6 +87,12 @@ footer {
     .social-icons {
         @include flexbox(row, nowrap, flex-start, flex-start);
         margin-top: 10px;
+
+        @include mobile {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
         img {
             background-color: map-get($colores, "blanco");
@@ -117,6 +136,10 @@ footer {
             margin-top: 8px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: map-get($colores, "negro");
+
+            @include mobile {
+                font-size: 12px;
+            }
         }
     }
 }

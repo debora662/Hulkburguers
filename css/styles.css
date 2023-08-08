@@ -99,7 +99,7 @@ footer .container_footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    max-width: 100%;
   }
 }
 footer .container_footer .botonera-footer {
@@ -110,12 +110,16 @@ footer .container_footer .botonera-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 }
 footer .container_footer .botonera-footer li {
   margin: 0 20px 0 0;
   list-style-type: none;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  footer .container_footer .botonera-footer li {
+    margin: 0 5px;
+  }
 }
 footer .container_footer .botonera-footer #navegacion {
   display: flex;
@@ -128,6 +132,16 @@ footer .container_footer .botonera-footer #navegacion {
   padding: 0px;
   margin-left: 20px;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  footer .container_footer .botonera-footer #navegacion {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer .container_footer .botonera-footer #navegacion a {
   font-size: 20px;
   font-family: "Breeze";
@@ -139,7 +153,7 @@ footer .container_footer .botonera-footer #navegacion a:hover {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   footer .container_footer .botonera-footer #navegacion a {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 footer .follow {
@@ -166,6 +180,13 @@ footer .social-icons {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 10px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  footer .social-icons {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 footer .social-icons img {
   background-color: white;
@@ -219,6 +240,11 @@ footer .social-icons img {
   margin-top: 8px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: black;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .info_container .info p {
+    font-size: 12px;
+  }
 }
 
 .legal_footer {
