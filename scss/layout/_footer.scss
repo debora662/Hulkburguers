@@ -1,4 +1,5 @@
 @import "../layout/queries576";
+@import "../layout/queries768";
 
 footer {
     grid-area: footer;
@@ -15,6 +16,13 @@ footer {
             max-width: 100%;
         }
 
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
         .botonera-footer {
             margin-top: 10px;
 
@@ -24,6 +32,12 @@ footer {
                 align-items: center;
             }
 
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+           
             li {
                 margin: 0 20px 0 0;
                 list-style-type: none;
@@ -31,6 +45,12 @@ footer {
                 @include mobile {
                     margin: 0 5px;
                 }
+
+                @include tablet {
+                    margin: 0 15px;
+                }
+                
+
             }
 
             #navegacion {
@@ -50,6 +70,14 @@ footer {
                     justify-content: center;
                 }
 
+                @include tablet {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center; 
+                }
+
                 a {
                     font-size: 20px;
                     font-family: "Breeze";
@@ -64,7 +92,7 @@ footer {
                     @include mobile {
                         font-size: 1rem;
                     }
-
+                   
                 }
             }
         }
@@ -80,8 +108,11 @@ footer {
 
         @include mobile {
             display: none;
+        }    
+        @include tablet {
+            display: none;
         }
-
+        
     }
 
     .social-icons {
@@ -115,6 +146,10 @@ footer {
             display: none;
         }
 
+        @include tablet {
+            display:none;
+        }
+
     }
 }
 
@@ -125,6 +160,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;       
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
 
     .info {
