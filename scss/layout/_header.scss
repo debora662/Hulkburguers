@@ -1,3 +1,5 @@
+@import "../layout/queries576";
+
 header {
     grid-area: header;
 
@@ -38,6 +40,11 @@ header {
             &:focus {
                 background-size: 100% 2px;
             }
+
+            @include mobile {
+                font-size: 1.1rem;
+            }
+
         }
     }
 }
@@ -46,3 +53,17 @@ header {
     width: 100px;
     height: 100px;
 }
+
+.logo-mobile-hide {
+    @include mobile {
+        display: none;        
+    }
+}
+
+.navbar-nav {
+    @include mobile {
+    align-items: flex-start !important;
+    margin: 10px;    
+}
+}
+

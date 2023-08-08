@@ -1,30 +1,29 @@
-@import "../layout/queries768";
+@import "../layout/queries576";
 
 footer {
     grid-area: footer;
     background-color: map-get($colores, "mostaza");
-    
+
     .container_footer {
         display: grid;
-        grid-template-columns: auto 1fr auto;  
-        
-        @include tablet {
+        grid-template-columns: auto 1fr auto;
+
+        @include mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;                
+            justify-content: center;
         }
 
         .botonera-footer {
             margin-top: 10px;
 
-            @include tablet {
+            @include mobile {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;                
+                justify-content: center;
             }
-        
 
             li {
                 margin: 0 20px 0 0;
@@ -36,18 +35,23 @@ footer {
                 border-bottom: 2px solid map-get($colores, "negro");
                 width: fit-content;
                 padding: 0px;
-                margin-left: 20px;     
-                              
+                margin-left: 20px;
+
                 a {
                     font-size: 20px;
                     font-family: "Breeze";
                     text-decoration: none;
                     color: map-get($colores, "negro");
-                                    
+
                     &:hover {
                         color: map-get($colores, "blanco");
-                        
+
                     }
+
+                    @include mobile {
+                        font-size: 1.1rem;
+                    }
+
                 }
             }
         }
@@ -61,15 +65,16 @@ footer {
         font-weight: 500;
         font-size: 1rem;
 
-        @include tablet {
+        @include mobile {
             display: none;
         }
+
     }
 
-    .social-icons {        
+    .social-icons {
         @include flexbox(row, nowrap, flex-start, flex-start);
-        margin-top: 10px;  
-                       
+        margin-top: 10px;
+
         img {
             background-color: map-get($colores, "blanco");
             border-radius: 60%;
@@ -85,18 +90,19 @@ footer {
 
     img {
         width: 140px;
-        height: 140px; 
-        
-        @include tablet {
+        height: 140px;
+
+        @include mobile {
             display: none;
-           }
+        }
+
     }
 }
 
 .info_container {
     @include flexbox(column, nowrap, center, flex-start);
 
-    @include tablet {
+    @include mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -105,16 +111,12 @@ footer {
 
     .info {
         @include flexbox(row, nowrap, flex-start, center);
-       
+
         p {
             margin-left: 20px;
             margin-top: 8px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: map-get($colores, "negro");
-
-            @include tablet {
-                text-align: center;
-            }
         }
     }
 }
@@ -126,6 +128,11 @@ footer {
     p {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: map-get($colores, "negro");
-        font-size: 13px   
+        font-size: 13px;
+
+        @include mobile {
+            text-align: center;
+            font-size: 12px;
+        }
     }
 }
