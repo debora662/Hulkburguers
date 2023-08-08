@@ -47,7 +47,7 @@ main {
                         margin-bottom: 30px;
                     }
 
-                    @include notebook {
+                    @include desktop {
                         width: 400px;
                         height: 300px;
                     }
@@ -142,7 +142,7 @@ main {
                         height: 200px;
                     }
 
-                    @include notebook {
+                    @include desktop {
                         width: 400px;
                         height: 300px;
                     }
