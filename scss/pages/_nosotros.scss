@@ -1,4 +1,5 @@
 @import "../layout/queries576";
+@import "../layout/queries768";
 
 .container-article2 {
   display: grid;
@@ -10,6 +11,12 @@
 
   @include mobile {
     @include flexbox (column, wrap, center, center);
+    padding: 0;
+  }
+
+  @include tablet {
+    @include flexbox (column, wrap, center, center);
+    padding: 0;
   }
 
   .art1 {
@@ -21,6 +28,10 @@
 
       @include mobile {
         @include mobile-p;
+      }
+
+      @include tablet {
+        width:75%
       }
     }
 
@@ -43,6 +54,9 @@
 
       @include mobile {
         @include mobile-p;
+      }
+      @include tablet {
+        width:75%
       }
     }
 
@@ -69,6 +83,10 @@
         @include mobile-img-video;       
         margin-top: 30px;
       }
+      @include tablet {
+        margin-top: 30px;
+      }
+
     }
   }
 }
