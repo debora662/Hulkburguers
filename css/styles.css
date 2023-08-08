@@ -327,17 +327,19 @@ main article .article-container {
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   main article .article-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 }
 main article .article-container .item1 {
@@ -357,7 +359,6 @@ main article .article-container .item1 iframe {
   main article .article-container .item1 iframe {
     width: 300px;
     height: 200px;
-    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -415,7 +416,7 @@ main article .article-container .item2 h2 {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item2 {
-    order: 1;
+    order: 2;
     margin-bottom: 30px;
   }
 }
@@ -477,7 +478,7 @@ main article .article-container .item4 {
 main article .article-container .item4 img {
   width: 450px;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 25px;
   border: solid 0.2rem rgb(228, 225, 225);
 }
 @media (min-width: 0px) and (max-width: 576px) {
@@ -513,6 +514,15 @@ main article .article-container .item4 img {
   padding-left: 30px;
   padding-right: 30px;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container-article2 .art1 {
   display: flex;
   flex-direction: column;
@@ -529,11 +539,22 @@ main article .article-container .item4 img {
   width: 85%;
   font-size: 1rem;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 .art1 p {
+    font-size: 13px;
+    max-width: 80%;
+  }
+}
 .container-article2 .art1 h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 .art1 h2 {
+    font-size: 1.8rem;
+  }
 }
 .container-article2 .art2 {
   display: flex;
@@ -552,11 +573,22 @@ main article .article-container .item4 img {
   width: 85%;
   font-size: 1rem;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 .art2 p {
+    font-size: 13px;
+    max-width: 80%;
+  }
+}
 .container-article2 .art2 h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 .art2 h2 {
+    font-size: 1.8rem;
+  }
 }
 .container-article2 .art3 {
   grid-column: 2/span 1;
@@ -571,6 +603,13 @@ main article .article-container .item4 img {
   border-radius: 30px;
   border: solid 0.2rem white;
   max-width: 90%;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-article2 .art3 img {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+  }
 }
 
 .container-article3 {

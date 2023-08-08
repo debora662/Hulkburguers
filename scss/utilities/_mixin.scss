@@ -11,8 +11,8 @@
     font-family: $font-lato;
     color: map-get($colores, "blanco");
     font-weight: 800;
-    width: 85%;     
-    font-size: 1rem;    
+    width: 85%;
+    font-size: 1rem;
 }
 
 @mixin title-comun {
@@ -30,5 +30,24 @@
     font-size: 0.8 rem;
     margin-top: 6px;
 }
- 
 
+@mixin img-video-index {
+    width: 450px;
+    height: 300px;
+    border-radius: 25px;
+    border: solid 0.2rem map-get($colores, "gris");
+}
+
+@mixin mobile-p {
+    font-size: 13px;
+    max-width: 80%;
+}
+
+@mixin mobile-title {
+    font-size: 1.8rem;
+}
+
+@mixin mobile-img-video {
+    width: 300px;
+    height: 200px;    
+}

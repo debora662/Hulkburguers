@@ -15,34 +15,23 @@ main {
             margin-bottom: 50px;
 
             @include mobile {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
+                @include flexbox (column, wrap, center, center);
             }
 
             @include tablet {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }          
+                @include flexbox (column, wrap, center, center);
+            }
 
             .item1 {
                 @include flexbox (column, nowrap, center, center);
 
                 iframe {
-                    width: 450px;
-                    height: 300px;
-                    border-radius: 25px;
-                    border: solid 0.2rem map-get($colores, "gris");
+                    @include img-video-index;
 
                     @include mobile {
-                        width: 300px;
-                        height: 200px;
-                        margin-bottom: 30px;
-                    }   
-                    
+                        @include mobile-img-video;
+                    }
+
                     @include tablet {
                         margin-bottom: 30px;
                     }
@@ -59,7 +48,7 @@ main {
                 }
 
                 @include tablet {
-                    order:1;
+                    order: 1;
                 }
             }
 
@@ -70,8 +59,7 @@ main {
                     @include p-comun;
 
                     @include mobile {
-                        font-size: 13px;
-                        max-width: 80%;
+                        @include mobile-p;
                     }
                 }
 
@@ -79,20 +67,19 @@ main {
                     @include title-comun;
 
                     @include mobile {
-                        font-size: 1.8rem;
+                        @include mobile-title;
                     }
-                                   }
+                }
 
                 @include mobile {
-                    order: 1;
+                    order: 2;
                     margin-bottom: 30px;
                 }
 
                 @include tablet {
-                    order:2;
+                    order: 2;
                     margin-bottom: 30px;
                 }
-
 
             }
 
@@ -103,8 +90,7 @@ main {
                     @include p-comun;
 
                     @include mobile {
-                        font-size: 13px;
-                        max-width: 80%;
+                        @include mobile-p;
                     }
 
                 }
@@ -113,9 +99,9 @@ main {
                     @include title-comun;
 
                     @include mobile {
-                        font-size: 1.8rem;
+                        @include mobile-title;
                     }
-                    
+
                 }
 
                 @include mobile {
@@ -123,7 +109,7 @@ main {
                 }
 
                 @include tablet {
-                    order:4;
+                    order: 4;
                 }
 
             }
@@ -132,21 +118,16 @@ main {
                 @include flexbox (column, nowrap, center, center);
 
                 img {
-                    width: 450px;
-                    height: 300px;
-                    border-radius: 30px;
-                    border: solid 0.2rem map-get($colores, "gris");
+                    @include img-video-index;
 
                     @include mobile {
-                        width: 300px;
-                        height: 200px;
+                        @include mobile-img-video;
                     }
 
                     @include desktop {
                         width: 400px;
                         height: 300px;
                     }
-
                 }
 
                 @include mobile {
@@ -158,7 +139,6 @@ main {
                     order: 3;
                     margin-bottom: 30px;
                 }
-
             }
         }
     }
