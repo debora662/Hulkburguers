@@ -365,6 +365,12 @@ main article .article-container .item1 iframe {
     margin-bottom: 30px;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  main article .article-container .item1 iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item1 {
     order: 1;
@@ -478,6 +484,12 @@ main article .article-container .item4 img {
   main article .article-container .item4 img {
     width: 300px;
     height: 200px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  main article .article-container .item4 img {
+    width: 400px;
+    height: 300px;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
