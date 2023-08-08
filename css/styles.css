@@ -225,7 +225,6 @@ footer .social-icons img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 }
 .info_container .info {
@@ -244,7 +243,7 @@ footer .social-icons img {
 @media (min-width: 0px) and (max-width: 576px) {
   .info_container .info p {
     font-size: 12.5px;
-    margin-left: 15px;
+    margin-left: 10px;
   }
 }
 
