@@ -1,51 +1,105 @@
-     article {
+       @import "../layout/queries768";
 
-         .article-container {
-             display: grid;
-             grid-template-columns: 1fr 1fr;
-             grid-template-rows: 1fr 1fr;
-             margin-top: 30px;
-             margin-bottom: 50px;
+       main {
+           background-color: map-get($colores, "negro");
+           grid-area: main;
 
+           article {
+               .article-container {
+                   display: grid;
+                   grid-template-columns: 1fr 1fr;
+                   grid-template-rows: 1fr 1fr;
+                   margin-top: 30px;
+                   margin-bottom: 50px;
 
+                   @include tablet {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
 
-             .item1 {
-                 @include flexbox (column, nowrap, center, center);
-                 max-width: 100%;
+                   .item1 {
+                       @include flexbox (column, nowrap, center, center);
 
+                       iframe {
+                           width: 450px;
+                           height: 300px;
+                           border-radius: 25px;
+                           border: solid 0.2rem map-get($colores, "gris");
 
-                 iframe {
-                     width: 30em;
-                     height: 18em;
-                     border-radius: 25px;
-                     border: solid 0.2rem map-get($colores, "gris");
-                 }
-             }
+                           @include tablet {
+                            width: 400px;
+                            height: 270px;
+                            margin-bottom: 30px;
+                        }
+                    }
 
-             .item2,
-             .item3 {
-                 @include flexbox (column, nowrap, center, center);
-                 max-width: 100%;
+                    @include tablet {
+                        order:1;
+                    }
+                       
+                   }
 
-                 p {
-                     @include p-comun;
-                 }
+                   .item2 {
+                       @include flexbox (column, nowrap, center, center);
 
-                 h2 {
-                     @include title-comun;
-                 }
-             }
+                       p {
+                           @include p-comun;
 
-             .item4 {
-                 @include flexbox (column, nowrap, center, center);
-                 max-width: 100%;
+                           @include tablet {
+                            width: 70%;
+                        }
 
-                 img {
-                     width: 30em;
-                     height: 18em;
-                     border-radius: 30px;
-                     border: solid 0.2rem map-get($colores, "gris");
-                 }
-             }
-         }
-     }
+                       }
+
+                       h2 {
+                           @include title-comun;
+                       }
+                       @include tablet {
+                        order:1;
+                        margin-bottom: 30px;
+                    }
+                   }
+
+                   .item3 {
+                       @include flexbox (column, nowrap, center, center);
+
+                       p {
+                           @include p-comun;
+                           @include tablet {
+                            width: 70%;
+                        }
+
+                       }
+
+                       h2 {
+                           @include title-comun;
+                       }
+                       @include tablet {
+                        order:4;
+                    }
+                   }
+
+                   .item4 {
+                       @include flexbox (column, nowrap, center, center);
+
+                       img {
+                           width: 450px;
+                           height: 300px;
+                           border-radius: 30px;
+                           border: solid 0.2rem map-get($colores, "gris");
+
+                           @include tablet {
+                            width: 400px;
+                            height: 270px;
+                        }
+                       }
+                       @include tablet {
+                        order:3;
+                        margin-bottom: 30px;
+                    }
+                   }
+               }
+           }
+       }

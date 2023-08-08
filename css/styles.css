@@ -14,10 +14,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
@@ -67,11 +68,6 @@ header .title-container .title {
   height: 100px;
 }
 
-main {
-  background-color: black;
-  grid-area: main;
-}
-
 footer {
   grid-area: footer;
   background-color: #ECC704;
@@ -80,8 +76,24 @@ footer .container_footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
+@media (max-width: 768px) {
+  footer .container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer .container_footer .botonera-footer {
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+  footer .container_footer .botonera-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 footer .container_footer .botonera-footer li {
   margin: 0 20px 0 0;
@@ -119,6 +131,11 @@ footer .follow {
   font-weight: 500;
   font-size: 1rem;
 }
+@media (max-width: 768px) {
+  footer .follow {
+    display: none;
+  }
+}
 footer .social-icons {
   display: flex;
   flex-direction: row;
@@ -146,6 +163,11 @@ footer .social-icons img {
   width: 140px;
   height: 140px;
 }
+@media (max-width: 768px) {
+  .logo_footer img {
+    display: none;
+  }
+}
 
 .info_container {
   display: flex;
@@ -153,6 +175,14 @@ footer .social-icons img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .info_container .info {
   display: flex;
@@ -166,6 +196,11 @@ footer .social-icons img {
   margin-top: 8px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: black;
+}
+@media (max-width: 768px) {
+  .info_container .info p {
+    text-align: center;
+  }
 }
 
 .legal_footer {
@@ -182,65 +217,137 @@ footer .social-icons img {
   font-size: 13px;
 }
 
-article .article-container {
+main {
+  background-color: black;
+  grid-area: main;
+}
+main article .article-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 30px;
   margin-bottom: 50px;
 }
-article .article-container .item1 {
+@media (max-width: 768px) {
+  main article .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main article .article-container .item1 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
 }
-article .article-container .item1 iframe {
-  width: 30em;
-  height: 18em;
+main article .article-container .item1 iframe {
+  width: 450px;
+  height: 300px;
   border-radius: 25px;
   border: solid 0.2rem rgb(228, 225, 225);
 }
-article .article-container .item2,
-article .article-container .item3 {
+@media (max-width: 768px) {
+  main article .article-container .item1 iframe {
+    width: 400px;
+    height: 270px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  main article .article-container .item1 {
+    order: 1;
+  }
+}
+main article .article-container .item2 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
 }
-article .article-container .item2 p,
-article .article-container .item3 p {
+main article .article-container .item2 p {
   text-align: center;
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
-  width: 550px;
+  width: 85%;
   font-size: 1rem;
 }
-article .article-container .item2 h2,
-article .article-container .item3 h2 {
+@media (max-width: 768px) {
+  main article .article-container .item2 p {
+    width: 70%;
+  }
+}
+main article .article-container .item2 h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
 }
-article .article-container .item4 {
+@media (max-width: 768px) {
+  main article .article-container .item2 {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+main article .article-container .item3 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
 }
-article .article-container .item4 img {
-  width: 30em;
-  height: 18em;
+main article .article-container .item3 p {
+  text-align: center;
+  font-family: "lato", sans-serif;
+  color: white;
+  font-weight: 800;
+  width: 85%;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  main article .article-container .item3 p {
+    width: 70%;
+  }
+}
+main article .article-container .item3 h2 {
+  font-family: "saty", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  main article .article-container .item3 {
+    order: 4;
+  }
+}
+main article .article-container .item4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main article .article-container .item4 img {
+  width: 450px;
+  height: 300px;
   border-radius: 30px;
   border: solid 0.2rem rgb(228, 225, 225);
+}
+@media (max-width: 768px) {
+  main article .article-container .item4 img {
+    width: 400px;
+    height: 270px;
+  }
+}
+@media (max-width: 768px) {
+  main article .article-container .item4 {
+    order: 3;
+    margin-bottom: 30px;
+  }
 }
 
 .container-article2 {
@@ -264,7 +371,7 @@ article .article-container .item4 img {
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
-  width: 550px;
+  width: 85%;
   font-size: 1rem;
 }
 .container-article2 .art1 h2 {
@@ -287,7 +394,7 @@ article .article-container .item4 img {
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
-  width: 550px;
+  width: 85%;
   font-size: 1rem;
 }
 .container-article2 .art2 h2 {
@@ -330,7 +437,7 @@ article .article-container .item4 img {
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
-  width: 550px;
+  width: 85%;
   font-size: 1rem;
   width: 40%;
   margin-bottom: 50px;
@@ -446,7 +553,7 @@ article .article-container .item4 img {
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
-  width: 550px;
+  width: 85%;
   font-size: 1rem;
 }
 
