@@ -287,8 +287,8 @@ main article .article-container .item1 iframe {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item1 iframe {
-    width: 360px;
-    height: 240px;
+    width: 340px;
+    height: 230px;
     margin-bottom: 30px;
   }
 }
@@ -385,8 +385,8 @@ main article .article-container .item4 img {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main article .article-container .item4 img {
-    width: 360px;
-    height: 240px;
+    width: 340px;
+    height: 230px;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {

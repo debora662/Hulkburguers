@@ -37,8 +37,8 @@ main {
                     border: solid 0.2rem map-get($colores, "gris");
 
                     @include mobile {
-                        width: 360px;
-                        height: 240px;
+                        width: 340px;
+                        height: 230px;
                         margin-bottom: 30px;
                     }
 
@@ -118,8 +118,8 @@ main {
                     border: solid 0.2rem map-get($colores, "gris");
 
                     @include mobile {
-                        width: 360px;
-                        height: 240px;
+                        width: 340px;
+                        height: 230px;
                     }
 
                 }
