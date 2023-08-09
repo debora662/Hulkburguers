@@ -33,7 +33,7 @@
         font-size: 18px;
         padding: 5px;
         border-radius: 6px;
-
+        
         &:hover {
             background-color: map-get($colores, "bordo");
             color: map-get($colores, "blanco");
@@ -46,15 +46,24 @@
 }
 
 @include mobile {
-    .col-lg-6, .col-md-8, .col-12 {
-        width: 80%;    
+    .col-lg-6, .col-md-8, .col-sm-10, .col-12 {
+        width: 95%;        
+        font-size: 13px;
+
     } 
+    ::placeholder {
+        font-size: 13px;
+    }
+    .row.mb-4 {
+        margin-bottom: 2px !important;
+    }
 }
 
 @include tablet {
     .col-lg-6, .col-md-8, .col-12 {
-        width: 100%;    
-    } 
+        width: 100%;     
+       }    
+
 }
 
 @include desktop {
