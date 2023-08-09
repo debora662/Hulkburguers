@@ -3,8 +3,13 @@
 @import "../layout/queries1024";
 
 main {
-    background-color: map-get($colores, "negro");
-    grid-area: main;
+    @include main;
+
+    @include mobile {
+        #carouselExampleIndicators {
+            display: none;
+        }     
+    }
 
     article {
         .article-container {

@@ -317,6 +317,11 @@ main {
   background-color: black;
   grid-area: main;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  main #carouselExampleIndicators {
+    display: none;
+  }
+}
 main article .article-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -507,6 +512,10 @@ main article .article-container .item4 img {
   }
 }
 
+main {
+  background-color: black;
+  grid-area: main;
+}
 main article .container-article2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -639,6 +648,10 @@ main article .container-article2 .art3 img {
   }
 }
 
+main article {
+  background-color: black;
+  grid-area: main;
+}
 main article .container-article3 {
   display: flex;
   flex-direction: column;
@@ -753,6 +766,10 @@ main .container-images .hamburguesa_style p {
   }
 }
 
+main {
+  background-color: black;
+  grid-area: main;
+}
 main .img-sector img {
   max-width: 100%;
 }
@@ -927,8 +944,11 @@ main #margins {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* @import "../layout/queries1024"; */
-.title-contacto {
+main {
+  background-color: black;
+  grid-area: main;
+}
+main .title-contacto {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -936,18 +956,18 @@ main #margins {
   align-items: center;
   margin-top: 50px;
 }
-.title-contacto h2 {
+main .title-contacto h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .title-contacto h2 {
+  main .title-contacto h2 {
     font-size: 1.8rem;
   }
 }
-.title-contacto p {
+main .title-contacto p {
   text-align: center;
   font-family: "lato", sans-serif;
   color: white;
@@ -956,13 +976,12 @@ main #margins {
   font-size: 1rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .title-contacto p {
+  main .title-contacto p {
     font-size: 13px;
     max-width: 80%;
   }
 }
-
-.boton {
+main .boton {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -970,44 +989,50 @@ main #margins {
   align-items: center;
   margin-top: 20px;
 }
-.boton button {
+main .boton button {
   background-color: white;
   font-family: "Breeze", sans-serif;
   font-size: 18px;
   padding: 5px;
   border-radius: 6px;
 }
-.boton button:hover {
+main .boton button:hover {
   background-color: #af052c;
   color: white;
 }
-
-#margin-botton {
+main #margin-botton {
   margin-bottom: 50px;
 }
-
 @media (min-width: 0px) and (max-width: 576px) {
-  .col-lg-6, .col-md-8, .col-sm-10, .col-12 {
+  main .col-lg-6,
+  main .col-md-8,
+  main .col-sm-10,
+  main .col-12 {
     width: 95%;
     font-size: 13px;
   }
-  ::placeholder {
+  main ::placeholder {
     font-size: 13px;
   }
-  .row.mb-4 {
+  main .row.mb-4 {
     margin-bottom: 2px !important;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .col-lg-6, .col-md-8, .col-12 {
+  main .col-lg-6,
+  main .col-md-8,
+  main .col-12 {
     width: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .col-lg-6, .col-md-8, .col-12 {
+  main .col-lg-6,
+  main .col-md-8,
+  main .col-12 {
     width: 100%;
   }
 }
+
 .bienvenidos-container {
   display: flex;
   justify-content: center;

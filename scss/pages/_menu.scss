@@ -4,6 +4,7 @@
 
 main {
     article {
+        @include main;
         .container-article3 {
             @include flexbox(column, nowrap, center, center);
 

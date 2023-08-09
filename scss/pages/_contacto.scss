@@ -1,74 +1,88 @@
 @import "../layout/queries576";
 @import "../layout/queries768";
-/* @import "../layout/queries1024"; */
+@import "../layout/queries1024";
 
-.title-contacto {
-    @include flexbox(column, nowrap, center, center);
-    margin-top: 50px;
+main {
+    @include main;
+    .title-contacto {
+        @include flexbox(column, nowrap, center, center);
+        margin-top: 50px;
 
-    h2 {
-        @include title-comun;
+        h2 {
+            @include title-comun;
 
-        @include mobile {
-            @include mobile-title;
-        }        
+            @include mobile {
+                @include mobile-title;
+            }
+        }
+
+        p {
+            @include p-comun;
+
+            @include mobile {
+                @include mobile-p;
+            }
+        }
     }
 
-    p {
-        @include p-comun;
+    .boton {
+        @include flexbox(column, nowrap, center, center);
+        margin-top: 20px;
 
-        @include mobile {
-            @include mobile-p;
+        button {
+            background-color: map-get($colores, "blanco");
+            font-family: $font-breeze;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: map-get($colores, "bordo");
+                color: map-get($colores, "blanco");
+            }
+        }
+    }
+
+    #margin-botton {
+        margin-bottom: 50px;
+    }
+
+    @include mobile {
+
+        .col-lg-6,
+        .col-md-8,
+        .col-sm-10,
+        .col-12 {
+            width: 95%;
+            font-size: 13px;
+
+        }
+
+        ::placeholder {
+            font-size: 13px;
+        }
+
+        .row.mb-4 {
+            margin-bottom: 2px !important;
+        }
+    }
+
+    @include tablet {
+
+        .col-lg-6,
+        .col-md-8,
+        .col-12 {
+            width: 100%;
+        }
+
+    }
+
+    @include desktop {
+
+        .col-lg-6,
+        .col-md-8,
+        .col-12 {
+            width: 100%;
         }
     }
 }
-
-.boton {
-    @include flexbox(column, nowrap, center, center);
-    margin-top: 20px;
-
-    button {
-        background-color: map-get($colores, "blanco");
-        font-family: $font-breeze;
-        font-size: 18px;
-        padding: 5px;
-        border-radius: 6px;
-        
-        &:hover {
-            background-color: map-get($colores, "bordo");
-            color: map-get($colores, "blanco");
-        }
-    }
-}
-
-#margin-botton {
-    margin-bottom: 50px;
-}
-
-@include mobile {
-    .col-lg-6, .col-md-8, .col-sm-10, .col-12 {
-        width: 95%;        
-        font-size: 13px;
-
-    } 
-    ::placeholder {
-        font-size: 13px;
-    }
-    .row.mb-4 {
-        margin-bottom: 2px !important;
-    }
-}
-
-@include tablet {
-    .col-lg-6, .col-md-8, .col-12 {
-        width: 100%;     
-       }    
-
-}
-
-@include desktop {
-    .col-lg-6, .col-md-8, .col-12 {
-        width: 100%;    
-    } 
-}
-

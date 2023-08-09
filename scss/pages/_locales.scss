@@ -4,6 +4,7 @@
 
 
 main {
+    @include main;
     .img-sector {
         img {
             max-width: 100%;

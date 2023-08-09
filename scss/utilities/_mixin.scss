@@ -58,3 +58,8 @@
     font-size: 12px;
     margin-bottom: 25px;
 }
+
+@mixin main {
+    background-color: map-get($colores, "negro");
+    grid-area: main;
+}
