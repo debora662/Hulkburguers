@@ -49,5 +49,12 @@
 
 @mixin mobile-img-video {
     width: 300px;
-    height: 200px;    
+    height: 200px;
+}
+
+@mixin mobile-p-hamburguesa {
+    max-width: 65%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
 }

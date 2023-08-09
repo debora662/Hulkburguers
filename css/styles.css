@@ -359,6 +359,7 @@ main article .article-container .item1 iframe {
   main article .article-container .item1 iframe {
     width: 300px;
     height: 200px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -506,16 +507,16 @@ main article .article-container .item4 img {
   }
 }
 
-.container-article2 {
+main article .container-article2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 {
+  main article .container-article2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -525,7 +526,7 @@ main article .article-container .item4 img {
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .container-article2 {
+  main article .container-article2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -534,7 +535,7 @@ main article .article-container .item4 img {
     padding: 0;
   }
 }
-.container-article2 .art1 {
+main article .container-article2 .art1 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -542,7 +543,7 @@ main article .article-container .item4 img {
   align-items: center;
   margin-top: 40px;
 }
-.container-article2 .art1 p {
+main article .container-article2 .art1 p {
   text-align: center;
   font-family: "lato", sans-serif;
   color: white;
@@ -551,28 +552,28 @@ main article .article-container .item4 img {
   font-size: 1rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 .art1 p {
+  main article .container-article2 .art1 p {
     font-size: 13px;
     max-width: 80%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .container-article2 .art1 p {
+  main article .container-article2 .art1 p {
     width: 75%;
   }
 }
-.container-article2 .art1 h2 {
+main article .container-article2 .art1 h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 .art1 h2 {
+  main article .container-article2 .art1 h2 {
     font-size: 1.8rem;
   }
 }
-.container-article2 .art2 {
+main article .container-article2 .art2 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -581,7 +582,7 @@ main article .article-container .item4 img {
   margin-top: 40px;
   order: 2;
 }
-.container-article2 .art2 p {
+main article .container-article2 .art2 p {
   text-align: center;
   font-family: "lato", sans-serif;
   color: white;
@@ -590,28 +591,28 @@ main article .article-container .item4 img {
   font-size: 1rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 .art2 p {
+  main article .container-article2 .art2 p {
     font-size: 13px;
     max-width: 80%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .container-article2 .art2 p {
+  main article .container-article2 .art2 p {
     width: 75%;
   }
 }
-.container-article2 .art2 h2 {
+main article .container-article2 .art2 h2 {
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 .art2 h2 {
+  main article .container-article2 .art2 h2 {
     font-size: 1.8rem;
   }
 }
-.container-article2 .art3 {
+main article .container-article2 .art3 {
   grid-column: 2/span 1;
   grid-row: 1/span 2;
   display: flex;
@@ -620,80 +621,115 @@ main article .article-container .item4 img {
   justify-content: center;
   align-items: center;
 }
-.container-article2 .art3 img {
+main article .container-article2 .art3 img {
   border-radius: 30px;
   border: solid 0.2rem white;
   max-width: 90%;
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .container-article2 .art3 img {
+  main article .container-article2 .art3 img {
     width: 300px;
     height: 200px;
     margin-top: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  .container-article2 .art3 img {
+  main article .container-article2 .art3 img {
     margin-top: 30px;
   }
 }
 
-.container-article3 {
+main article .container-article3 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-.container-article3 h2 {
+main article .container-article3 h2 {
   margin-top: 30px;
   font-family: "saty", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 3rem;
 }
-.container-article3 p {
+@media (min-width: 0px) and (max-width: 576px) {
+  main article .container-article3 h2 {
+    font-size: 1.8rem;
+  }
+}
+main article .container-article3 p {
   text-align: center;
   font-family: "lato", sans-serif;
   color: white;
   font-weight: 800;
   width: 85%;
   font-size: 1rem;
-  width: 40%;
-  margin-bottom: 50px;
+  width: 55%;
+  margin-bottom: 35px;
 }
-
-.container-images {
+@media (min-width: 0px) and (max-width: 576px) {
+  main article .container-article3 p {
+    font-size: 13px;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+main .container-images {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-bottom: 70px;
   padding-left: 80px;
   padding-right: 80px;
+  margin-bottom: 70px;
 }
-.container-images .hamburguesa_style {
+@media (min-width: 0px) and (max-width: 576px) {
+  main .container-images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+main .container-images .hamburguesa_style {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-.container-images .hamburguesa_style img {
+main .container-images .hamburguesa_style img {
   border: solid 0.2rem white;
   width: 320px;
   height: 280px;
   border-radius: 20px;
 }
-.container-images .hamburguesa_style img:hover {
+main .container-images .hamburguesa_style img:hover {
   border: double 0.6rem white;
 }
-.container-images .hamburguesa_style p {
+@media (min-width: 0px) and (max-width: 576px) {
+  main .container-images .hamburguesa_style img {
+    max-width: 85%;
+    height: 250px;
+  }
+}
+main .container-images .hamburguesa_style p {
   color: white;
   width: 90%;
   height: 10%;
   text-align: center;
   font-size: 0.8 rem;
   margin-top: 6px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  main .container-images .hamburguesa_style p {
+    max-width: 65%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
 }
 
 .img-sector img {

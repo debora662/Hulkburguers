@@ -1,41 +1,73 @@
-.container-article3 {
-    @include flexbox(column, nowrap, center,center);     
+@import "../layout/queries576";
 
-    h2 {
-        margin-top: 30px;
-        @include title-comun;
-    }
+main {
+    article {
+        .container-article3 {
+            @include flexbox(column, nowrap, center, center);
 
-    p {
-        @include p-comun;
-        width: 40%;
-        margin-bottom: 50px;
-    }
-}
+            h2 {
+                margin-top: 30px;
+                @include title-comun;
 
-.container-images {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-bottom: 70px;
-    padding-left: 80px;
-    padding-right: 80px;
+                @include mobile {
+                    @include mobile-title;
+                }
+            }
 
-    .hamburguesa_style {
-        @include flexbox(column, nowrap, center,center);       
-                   
-        img {
-            border: solid 0.2rem map-get($colores, "blanco");
-            width: 320px;
-            height: 280px;
-            border-radius: 20px;         
-            &:hover {
-                border: double 0.6rem map-get($colores, "blanco");
+            p {
+                @include p-comun;
+                width: 55%;
+                margin-bottom: 35px;
+
+                @include mobile {
+                    @include mobile-p; 
+                    margin-bottom: 20px;                   
+                }
             }
         }
+    }
 
-        p {
-            @include p-hamburguesa;
+    .container-images {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr;        
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 70px;
+
+        @include mobile {
+            @include flexbox (column, wrap, center, center);
+            padding: 0;            
+        }
+
+        .hamburguesa_style {
+            @include flexbox(column, nowrap, center, center);   
+                    
+
+            img {
+                border: solid 0.2rem map-get($colores, "blanco");
+                width: 320px;
+                height: 280px;
+                border-radius: 20px;
+
+                &:hover {
+                    border: double 0.6rem map-get($colores, "blanco");
+                }
+
+                @include mobile {
+                    max-width: 85%;
+                    height: 250px;
+                }
+
+            }
+
+            p {
+                @include p-hamburguesa;
+
+                @include mobile {
+                    @include mobile-p-hamburguesa;
+                }
+            }
         }
     }
 }

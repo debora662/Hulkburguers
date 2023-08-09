@@ -30,6 +30,7 @@ main {
 
                     @include mobile {
                         @include mobile-img-video;
+                        margin-bottom: 30px;
                     }
 
                     @include tablet {
