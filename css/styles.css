@@ -665,7 +665,6 @@ main article .container-article3 p {
   font-weight: 800;
   width: 85%;
   font-size: 1rem;
-  width: 55%;
   margin-bottom: 35px;
 }
 @media (min-width: 0px) and (max-width: 576px) {

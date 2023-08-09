@@ -17,8 +17,7 @@ main {
             }
 
             p {
-                @include p-comun;
-                width: 55%;
+                @include p-comun;               
                 margin-bottom: 35px;
 
                 @include mobile {
