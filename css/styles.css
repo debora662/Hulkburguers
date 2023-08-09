@@ -682,8 +682,19 @@ main .container-images {
   padding-left: 80px;
   padding-right: 80px;
   margin-bottom: 70px;
+  grid-gap: 20px;
 }
 @media (min-width: 0px) and (max-width: 576px) {
+  main .container-images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   main .container-images {
     display: flex;
     flex-direction: column;
@@ -711,7 +722,13 @@ main .container-images .hamburguesa_style img:hover {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main .container-images .hamburguesa_style img {
-    max-width: 85%;
+    width: 280px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  main .container-images .hamburguesa_style img {
+    width: 280px;
     height: 250px;
   }
 }
@@ -729,6 +746,11 @@ main .container-images .hamburguesa_style p {
     text-align: center;
     font-size: 12px;
     margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  main .container-images .hamburguesa_style p {
+    width: 50%;
   }
 }
 
