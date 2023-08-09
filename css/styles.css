@@ -672,7 +672,7 @@ main article .container-article3 p {
   main article .container-article3 p {
     font-size: 13px;
     max-width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 main .container-images {
@@ -722,8 +722,8 @@ main .container-images .hamburguesa_style img:hover {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   main .container-images .hamburguesa_style img {
-    width: 280px;
-    height: 250px;
+    width: 270px;
+    height: 220px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1023px) {

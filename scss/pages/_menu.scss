@@ -23,7 +23,7 @@ main {
 
                 @include mobile {
                     @include mobile-p;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }                
             }
         }
@@ -63,8 +63,8 @@ main {
                 }
 
                 @include mobile {
-                    width: 280px;
-                    height: 250px;
+                    width: 270px;
+                    height: 220px;
                 } 
                 
                 @include desktop {
