@@ -881,7 +881,8 @@ main #margins {
 }
 @media (min-width: 0px) and (max-width: 576px) {
   .maps .mapa {
-    max-width: 65%;
+    width: auto;
+    height: auto;
     order: 2;
     margin-bottom: 50px;
   }
