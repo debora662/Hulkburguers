@@ -753,13 +753,58 @@ main .container-images .hamburguesa_style p {
   }
 }
 
-.img-sector img {
+main .img-sector img {
   max-width: 100%;
 }
-
-#margins {
+@media (min-width: 0px) and (max-width: 576px) {
+  main .img-sector img {
+    display: none;
+  }
+}
+main #margins {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  main #margins {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  main #margins .card {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  main #margins {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  main #margins .card {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  main #margins {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  main #margins .card {
+    max-width: 265px;
+  }
 }
 
 .title-locales {
@@ -772,6 +817,12 @@ main .container-images .hamburguesa_style p {
   font-weight: 600;
   font-size: 3rem;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .title-locales h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
 
 .title-card {
   color: white;
@@ -779,10 +830,22 @@ main .container-images .hamburguesa_style p {
   font-weight: 500;
   font-size: 1.4rem;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .title-card {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
 
 .text-card {
   color: white;
   font-weight: 450;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .text-card {
+    font-size: 13px;
+    text-align: center;
+  }
 }
 
 .maps {
@@ -792,6 +855,45 @@ main .container-images .hamburguesa_style p {
   margin-top: 80px;
   margin-bottom: 50px;
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .maps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .maps {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+.maps .mapa {
+  width: 500px;
+  height: 280px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .maps .mapa {
+    width: 400px;
+    height: 280px;
+    order: 2;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .maps .mapa {
+    max-width: 90%;
+    order: 2;
+    margin-bottom: 50px;
+  }
+}
 .maps p {
   font-family: "saty", sans-serif;
   color: white;
@@ -799,6 +901,21 @@ main .container-images .hamburguesa_style p {
   font-size: 2rem;
   margin-left: 30px;
   text-decoration: underline;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .maps p {
+    font-size: 1.3rem;
+    max-width: 75%;
+    margin-left: -10px;
+    text-align: center;
+    order: 1;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .maps p {
+    order: 1;
+    margin-left: -10px;
+  }
 }
 
 .card {
