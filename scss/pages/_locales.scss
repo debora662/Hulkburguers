@@ -109,8 +109,7 @@ main {
         height: 280px;
 
         @include mobile {
-            width: 400px;
-            height: 280px;
+            max-width: 65%;
             order: 2;
             margin-bottom: 50px;
         }
