@@ -1018,20 +1018,6 @@ main #margin-botton {
     margin-bottom: 2px !important;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  main .col-lg-6,
-  main .col-md-8,
-  main .col-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-  main .col-lg-6,
-  main .col-md-8,
-  main .col-12 {
-    width: 100%;
-  }
-}
 
 .bienvenidos-container {
   display: flex;
